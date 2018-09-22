@@ -1,0 +1,143 @@
+/* Load a font, from https://fonts.google.com/ - replace with your own ones! */
+@import url("https://fonts.googleapis.com/css?family=Vollkorn");
+
+/* Reset */
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Vollkorn", serif;
+  background-color: rgb(250, 250, 250);
+}
+
+
+/*What's this * right here, and why is it all alone?*/
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info {
+  padding: 10px;
+  min-height: 10vh;
+  /* this will nicely center the text, hotdog and hamburger both */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav #links {
+  /* Flexbox would be another way to do this */
+  text-align: right;
+}
+
+nav a {
+  /* color: rgb(0, 0, 200); */
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#content {
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+#content a.item {
+  height: 50vh;
+  /* but max out at 500px */
+  max-height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(30, 40, 60);
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: 0.5s ease all;
+}
+
+#content a.item span {
+  padding: 5px;
+  transition: 0.5s ease all;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#content a.item:hover span {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+}
+
+/*Why are the index page's images here?*/
+#content a.item.big {
+  background-image: url("./images/fran.jpg");
+}
+
+#content a.item.small {
+  background-image: url("./images/fran2.jpg");
+}
+
+/*  for the pages, i.e. not the index */
+/*could one nest these things with the same ID? rather than writing #page every time? Same question for #content.*/
+#page {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+#page img.top {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+/*would like to get these pics to maintain a square aspect ratio*/
+#page img {
+  height: 33vh;
+  max-height: 500px;
+  margin: 0px auto;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+/* for the about page */
+body.about div#page {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+body.about .info {
+  min-height: 40vh;
+}
+body.about div#page div {
+  max-width: 500px;
+}
+
+/* is it a small screen? */
+@media only screen and (max-width: 600px) {
+  body {
+    /* for debug, to make it obvious it's working */
+    /* color: red; */
+    /* background-color: black; */
+  }
+  #content {
+    grid-gap: 5px;
+  }
+  #content a.item {
+    max-height: 200px;
+  }
+  #page img {
+    max-height: 200px;
+}
