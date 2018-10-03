@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'script-font';
-    src: url(webfont.ttf);
-  }
+  font-family: "script-font";
+  src: url(webfont.ttf);
+}
 
 /* Reset */
 body,
@@ -12,8 +12,8 @@ html {
   background-color: rgb(252, 244, 250);
 }
 
-
-/*What's this * right here, and why is it all alone?*/
+/* The * means everything, so this means everything should use  */
+/* box sizing ie https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing  */
 * {
   box-sizing: border-box;
 }
@@ -42,10 +42,15 @@ nav #links {
 }
 
 nav a {
-  /* color: rgb(0, 0, 200); */
   color: rgb(20, 20, 20);
   text-decoration: none;
   margin-right: 10px;
+  transition: 0.3s ease all;
+}
+
+/* Maybe a color on hover for the nav links? */
+nav a:hover {
+  color: rgb(180, 50, 180);
 }
 
 #content {
@@ -95,12 +100,12 @@ nav a {
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-rows: repeat(3, 0.5fr);
+  grid-gap: 20px 0px;
 }
 
 .heading {
-    font-size: 5em;
+  font-size: 5em;
 }
 
 #page img.top {
@@ -109,7 +114,7 @@ nav a {
 }
 
 /*would like to get these pics to maintain a square aspect ratio*/
-#page img {
+#page img.top {
   height: 33vh;
   max-height: 500px;
   /*margin: 0px auto;*/
@@ -119,7 +124,15 @@ nav a {
   width: 100%;
 }
 
-#page img.framed {
+#page a {
+  /* display: block; */
+  text-align: center;
+  /* for debugging it */
+  /* background-color: green; */
+  /* border: dotted 2px cyan; */
+}
+#page a img.framed {
+  /*   you may want to bump these up to 33vw so they end up aligning with img.top when there are three together */
   width: 30vw;
   height: 30vw;
   border-style: solid;
@@ -127,15 +140,8 @@ nav a {
   border-width: 22px;
 }
 
-#page a.link {
-  background-color: red;
-  padding: 0px;
-  /*padding: 10px;*/
-  /*display: block;*/
-
-}
-
-#page a span.itemtext { /*what the fudge*/
+#page a span.itemtext {
+  /*what the fudge*/
   position: absolute;
 }
 
@@ -156,17 +162,24 @@ body.about div#page div {
 
 /* is it a small screen? */
 @media only screen and (max-width: 600px) {
-  body {
+  body,
+  #page {
     /* for debug, to make it obvious it's working */
     /* color: red; */
     /* background-color: black; */
   }
-  #content {
-    grid-gap: 5px;
+  #page {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-gap: 15px 0px;
   }
-  #content a.item {
-    max-height: 200px;
+  #page img.top {
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
-  #page img {
-    max-height: 200px;
+  #page a img.framed {
+    border-width: 15px;
+    width: 75vw;
+    height: 75vw;
+  }
 }
