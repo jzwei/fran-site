@@ -24,6 +24,10 @@ nav {
   grid-template-columns: 1fr 1fr;
   background-color: white;
   font-size: 3vh;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.8);
 }
 
 nav #links {
@@ -36,6 +40,12 @@ nav a {
   text-decoration: none;
   margin-right: 10px;
   transition: 0.3s ease all;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* Maybe a color on hover for the nav links? */
@@ -51,7 +61,6 @@ nav a:hover {
 
 #content a.item {
   height: 50vh;
-  /* but max out at 500px */
   max-height: 500px;
   background-position: center;
   background-size: cover;
@@ -75,7 +84,6 @@ nav a:hover {
   font-size: 1.3em;
 }
 
-/*Why are the index page's images here?*/
 #content a.item.big {
   /*background-image: url("./images/fran.jpg");*/
 }
@@ -85,8 +93,6 @@ nav a:hover {
 }
 
 /*  for the pages, i.e. not the index */
-
-
 #page {
   padding: 10px;
   display: grid;
@@ -104,6 +110,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 45px;
 }
 
 #page .pagename {
@@ -113,6 +120,7 @@ nav a:hover {
   text-align: center;
   margin: 70px 0;
   padding: 15px 0;
+  color: rgb(96, 96, 96);
 }
 
 #page .topimage {
@@ -133,22 +141,19 @@ nav a:hover {
   position: relative;
 }
 #page a img.framed {
-  /*the border looks weird and too thin*/
   width: 30vw;
   height: 30vw;
   border-style: solid;
   border-color: white;
-  border-width: 3vw;
+  border-width: 2.5vw;
 }
 
 #page .itemtext{
-  /*the link image isn't taking up the whole grid tile so lining this text up is weird*/
   position: absolute;
-  /*width: 100%;*/
   bottom: 1vh;
-  /*right: 3vh;*/
   right: 8%;
   font-size: 2vw;
+  color: rgb(96, 96, 96);
 }
 
 /* for the about page */
@@ -191,8 +196,9 @@ body.about div#page div {
   #page a img.framed {
     width: 75vw;
     height: 75vw;
-    border-width: 8vw;
+    border-width: 7vw;
   }
+
   #page .itemtext{
     position: absolute;
    /* width: 100%;*/
