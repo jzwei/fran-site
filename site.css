@@ -25,6 +25,7 @@ nav {
   background-color: white;
   font-size: 3vh;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1;
   background-color: rgba(255,255,255,0.8);
@@ -53,6 +54,16 @@ nav a:hover {
   color: rgb(180, 50, 180);
 }
 
+.indexname {
+  text-align: center;
+  font-size: 5em;
+  margin: 7vh 10px 0vh 10px;
+  padding: 2vh;
+  border-style: solid;
+  border-color: white;
+  border-width: 3vh;
+}
+
 #content {
   padding: 10px;
   display: grid;
@@ -65,32 +76,33 @@ nav a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgb(30, 40, 60);
   color: white;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   transition: 0.5s ease all;
+  text-decoration: none;
+  padding: 20vh;
+  border: solid;
+  border-color: white;
+  border-width: 3vh;
 }
 
 #content a.item span {
-  padding: 5px;
+  padding: 4vh;
   transition: 0.5s ease all;
   background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
 }
 
 #content a.item:hover span {
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.3em;
+  font-size: 4em;
 }
 
-#content a.item.big {
-  /*background-image: url("./images/fran.jpg");*/
-}
 
-#content a.item.small {
-  background-image: url("./images/fran2.jpg");
-}
 
 /*  for the pages, i.e. not the index */
 #page {
@@ -105,8 +117,7 @@ nav a:hover {
   grid-column-start: 1;
   grid-column-end: 4;
   padding: 10px;
-  min-height: 45vh;
-  /* this will nicely center the text, hotdog and hamburger both */
+  min-height: 35vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -115,8 +126,8 @@ nav a:hover {
 
 #page .pagename {
   width: 100%;
-  font-size: 5em;
-  background-color: rgba(255,255,255,0.8);
+  font-size: 4.5em;
+  background-color: rgba(252, 244, 250, 0.9);
   text-align: center;
   margin: 70px 0;
   padding: 15px 0;
@@ -124,8 +135,11 @@ nav a:hover {
 }
 
 #page .topimage {
-  background-image: url("https://www.take3.org/wp-content/uploads/2018/03/Glitter-655x387.png");
-}
+  background-image: url("./images/glitter.jpg" );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} /*"https://www.take3.org/wp-content/uploads/2018/03/Glitter-655x387.png"*/
 
 #page img {
   grid-column-start: 1;
@@ -187,6 +201,7 @@ body.about div#page div {
   #page .pagetop {
     grid-column-start: 1;
     grid-column-end: 1;
+    min-height: 20vh;
   }
 
   #page .pagename {
