@@ -26,16 +26,6 @@ nav {
   font-size: 3vh;
 }
 
-.info {
-  padding: 10px;
-  min-height: 10vh;
-  /* this will nicely center the text, hotdog and hamburger both */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
 nav #links {
   /* Flexbox would be another way to do this */
   text-align: right;
@@ -95,7 +85,8 @@ nav a:hover {
 }
 
 /*  for the pages, i.e. not the index */
-/*could one nest these things with the same ID? rather than writing #page every time? Same question for #content.*/
+
+
 #page {
   padding: 10px;
   display: grid;
@@ -104,24 +95,33 @@ nav a:hover {
   grid-gap: 20px 0px;
 }
 
-.heading {
-  font-size: 5em;
-}
-
-#page img.top {
+#page .pagetop {
   grid-column-start: 1;
   grid-column-end: 4;
+  padding: 10px;
+  min-height: 45vh;
+  /* this will nicely center the text, hotdog and hamburger both */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-/*would like to get these pics to maintain a square aspect ratio*/
-#page img.top {
-  height: 33vh;
-  max-height: 500px;
-  /*margin: 0px auto;*/
-  margin: auto auto;
-  object-fit: cover;
-  object-position: center;
+#page .pagename {
   width: 100%;
+  font-size: 5em;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  margin: 70px 0;
+  padding: 15px 0;
+}
+
+#page .topimage {
+  background-image: url("https://www.take3.org/wp-content/uploads/2018/03/Glitter-655x387.png");
+}
+
+#page img {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 #page a {
@@ -130,19 +130,25 @@ nav a:hover {
   /* for debugging it */
   /* background-color: green; */
   /* border: dotted 2px cyan; */
+  position: relative;
 }
 #page a img.framed {
-  /*   you may want to bump these up to 33vw so they end up aligning with img.top when there are three together */
+  /*the border looks weird and too thin*/
   width: 30vw;
   height: 30vw;
   border-style: solid;
   border-color: white;
-  border-width: 22px;
+  border-width: 3vw;
 }
 
-#page a span.itemtext {
-  /*what the fudge*/
+#page .itemtext{
+  /*the link image isn't taking up the whole grid tile so lining this text up is weird*/
   position: absolute;
+  /*width: 100%;*/
+  bottom: 1vh;
+  /*right: 3vh;*/
+  right: 8%;
+  font-size: 2vw;
 }
 
 /* for the about page */
@@ -173,13 +179,26 @@ body.about div#page div {
     grid-template-rows: repeat(3, 0.5fr);
     grid-gap: 15px 0px;
   }
-  #page img.top {
+  #page .pagetop {
     grid-column-start: 1;
     grid-column-end: 1;
   }
+
+  #page .pagename {
+    font-size: 2em;
+  }
+
   #page a img.framed {
-    border-width: 15px;
     width: 75vw;
     height: 75vw;
+    border-width: 8vw;
+  }
+  #page .itemtext{
+    position: absolute;
+   /* width: 100%;*/
+    bottom: 1vh;
+    /*right: 7vh;*/
+    right: 11%;
+    font-size: 6vw;
   }
 }
