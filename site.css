@@ -169,6 +169,14 @@ nav a:hover {
   font-size: 2vw;
   color: rgb(96, 96, 96);
 }
+#page .itemprice{
+  position: absolute;
+  bottom: 1vh;
+  left: 8%;
+  font-size: 1.5vw;
+  color: rgb(96, 96, 96);
+  font-family: "Courier New", Courier, monospace;
+}
 
 /* for the about page */
 body.about div#page {
@@ -216,10 +224,15 @@ body.about div#page div {
 
   #page .itemtext{
     position: absolute;
-   /* width: 100%;*/
     bottom: 1vh;
-    /*right: 7vh;*/
     right: 11%;
     font-size: 6vw;
   }
+  #page .itemprice{
+  position: absolute;
+  bottom: 1vh;
+  left: 11%;
+  font-size: 5vw;
+  }
+
 }
