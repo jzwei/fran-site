@@ -183,7 +183,7 @@ figure a:hover {
 .detailwrapper {
   display: grid;
   padding-top: 70px;
-  width: 800px;
+  max-width: 800px;
   /*height: 600px;*/
   grid-template-columns: 20% 80%;
   grid-template-rows: 1fr;
@@ -193,13 +193,14 @@ figure a:hover {
 
 .detailpage {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 .detailtext {
-  background-color: pink;
+  /*background-color: pink;*/
+  list-style: none;
+  padding: 10px;
 }
 
 .sp-wrap {
