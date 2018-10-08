@@ -8,37 +8,46 @@
   </head>
   <body>
     <nav>
-      <a id="logo" href="../">Fran Site</a>
+      <a id="logo" href="../">sparkle town</a>
+      <div class="pagelinks">
+        <a href="../big/">bigger things</a>
+        <span>//</span>
+        <a href="#">smaller things</a>
+      </div>
       <div id="links"><a href="../about">About</a> <a href="#">Contact</a></div>
     </nav>
 
-    <div id="page">
-      <div class="pagetop topimage">
-        <div class="pagename " href="#">jewelry travel case</div>
+    <div class="detailwrapper">
+      <div class="detailtext">
+        <li>length:</li>
+        <li>width:</li>
+        <li>thickness:</li>
+        <li>strap length:</li>
+        <li>color:</li>
+        <li>hardware finish:</li>
       </div>
-
-      <a href="/" class="">
-        <img class="framed" src="../images/jewelry3.jpg"/>
-        <div class="itemtext">jewelry travel case</div>
-        <div class="itemprice">$88</div>
-      </a> 
-      <a href="/" class="">
-        <img class="framed" src="../images/wallet2.jpg" />
-        <div class="itemtext">card case</div>
-        <div class="itemprice">$28</div>
-      </a>
-      <a href="/" class="">
-        <img class="framed" src="../images/handwallet2.jpg" />
-        <div class="itemtext">hands wallet</div>
-        <div class="itemprice">$98</div>
-      </a>
-      <a href="/" class="">
-        <img class="framed" src="../images/dogwallet.jpg" />
-        <div class="itemtext">poodle wallet</div>
-        <div class="itemprice">$38</div>
-      </a>
+      <div class="detailpage">
+        <div class="sp-wrap">
+          <a href="../images/detail/roundbagbig.jpg"><img src="../images/detail/roundbagsmall.jpg" alt=""></a>
+          <a href="../images/detail/rectanglebagbig.jpg"><img src="../images/detail/rectanglebagsmall.jpg" alt=""></a>
+          <a href="../images/detail/roundbagbig.jpg"><img src="../images/detail/roundbagsmall.jpg" alt=""></a>
+          <a href="../images/detail/rectanglebagbig.jpg"><img src="../images/detail/rectanglebagsmall.jpg" alt=""></a>
+        </div>
+      </div>
     </div>
+
     <footer class="footer">Copyright Etc Fran 2050</footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery-canvas-sparkles.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../js/smoothproducts.min.js"></script>
+    <script type="text/javascript">
+    /* wait for ../images to load */
+    $(window).load(function() {
+      $('.sp-wrap').smoothproducts();
+    });
+    </script>
     <script type="text/javascript" src="../index.js"></script>
   </body>
 </html>

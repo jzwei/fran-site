@@ -21,7 +21,7 @@ html {
 nav {
   padding: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: white;
   font-size: 3vh;
   position: fixed;
@@ -36,10 +36,15 @@ nav #links {
   text-align: right;
 }
 
+nav .pagelinks {
+  /* need to make these only one line mobile */
+  text-align: center;
+}
+
 nav a {
   color: rgb(20, 20, 20);
   text-decoration: none;
-  margin-right: 10px;
+  margin: 0px 10px;
   transition: 0.3s ease all;
 }
 
@@ -102,27 +107,17 @@ nav a:hover {
   font-size: 4em;
 }
 
-/*  for the pages, i.e. not the index */
+/*  PAGES */
 #page {
   padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 0.5fr);
-  grid-gap: 20px 0px;
 }
 
-#page .pagetop {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  padding: 10px;
-  min-height: 35vh;
+.pagetop {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin-top: 45px;
 }
 
-#page .pagename {
+.pagename {
   width: 100%;
   font-size: 4.5em;
   background-color: rgba(252, 244, 250, 0.9);
@@ -132,69 +127,156 @@ nav a:hover {
   color: rgb(96, 96, 96);
 }
 
-#page .topimage {
-  background-image: url("./images/glitter.jpg");
+.topimage {
+  background-image: url("./images/glitter.jpg" );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-} /*"https://www.take3.org/wp-content/uploads/2018/03/Glitter-655x387.png"*/
-
-#page img {
-  grid-column-start: 1;
-  grid-column-end: 4;
 }
 
-#page a {
-  text-decoration: none;
-  /* display: block; */
-  text-align: center;
-  /* for debugging it */
-  /* background-color: green; */
-  /* border: dotted 2px cyan; */
+.gallery{
+  display: flex;
+  /*width: 900px;*/
+  margin: 10px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure{
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #fff;
   position: relative;
 }
-#page a img.framed {
-  width: 30vw;
-  height: 30vw;
-  border-style: solid;
-  border-color: white;
-  /* border-color: yellow; */
-  border-width: 2.5vw;
-  /* border-width: 20px; */
+
+figure img{
+  width: 100%;
 }
 
-#page a div.info {
-  /* background-color: red; */
-  display: flex;
-  justify-content: space-between;
-  margin-top: -2.6vw;
-  /* margin-top: -2.7vh; */
-  flex-direction: row-reverse;
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
-  /* margin: 2vw 0vw; */
-  /* background-color: yellow; */
-  /* font-family: "Courier New", Courier, monospace; */
+figure .name{
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  font-size: 1.2em;
 }
 
-#page .itemtext {
-  /* position: absolute; */
-  /* bottom: 1vh; */
-  /* right: 8%; */
-  font-size: 2vw;
-  color: rgb(96, 96, 96);
-}
-#page .itemprice {
-  /* position: absolute; */
-  /* bottom: 1vh; */
-  /* left: 8%; */
-  font-size: 1.5vw;
-  color: rgb(96, 96, 96);
+figure .price{
+  position: absolute;
+  left: 4px;
+  bottom: 2px;
+  font-size: 1.1em;
   font-family: "Courier New", Courier, monospace;
 }
 
-/* for the about page */
-body.about div#page {
+figure a:hover {
+  font-style: italic;
+  /*font-size: 1.5em;*/
+  transition: all 0.3s ease;
+}
+
+
+/*DETAIL*/
+.detailwrapper {
+  display: grid;
+  padding-top: 70px;
+  max-width: 800px;
+  /*height: 600px;*/
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+
+.detailpage {
+  display: flex;
+  justify-content: center;
+  /*background-color: red;*/
+}
+
+.detailtext {
+  /*background-color: pink;*/
+  list-style: none;
+  padding: 10px;
+}
+
+.sp-wrap {
+  /**************
+    Set max-width to your thumbnail width
+  ***************/
+  max-width: 500px;
+}
+
+/* Thumbnails */
+.sp-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sp-thumbs img {
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+.sp-thumbs a:link, .sp-thumbs a:visited {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  opacity: .3;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+
+}
+.sp-thumbs a:hover {
+  opacity: 1;
+}
+
+/* Styles for the currently selected thumbnail */
+.sp-thumbs a:active, .sp-current {
+  opacity: 1!important;
+  position: relative;
+}
+
+/* Image currently being viewed */
+.sp-large {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.sp-large a img {
+  max-width: 100%;
+  height: auto;
+}
+.sp-large a {
+  display: block;
+}
+
+/* Panning Zoomed Image */
+.sp-zoom {
+  position: absolute;
+  cursor: zoom-in;
+}
+
+@media screen and (max-width: 400px) {
+  .sp-wrap {
+    margin: 0 0 15px 0;
+  }
+  #sp-prev, #sp-next {
+    top: auto;
+    margin-top: 0;
+    bottom: 25px;
+  }
+}
+/*DETAIL PAGE END*/
+
+
+/* ABOUT */
+body.about div{
   display: flex;
   align-items: center;
   display: flex;
@@ -204,61 +286,60 @@ body.about div#page {
 body.about .info {
   min-height: 40vh;
 }
-body.about div#page div {
+body.about divdiv {
   max-width: 500px;
 }
 
-/* is it a small screen? */
+/* SMALL STUFF */
 @media only screen and (max-width: 600px) {
   body,
-  #page {
+  {
     /* for debug, to make it obvious it's working */
     /* color: red; */
     /* background-color: black; */
   }
-  #page {
-    grid-template-columns: 1fr 1fr;
+  {
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 0.5fr);
     grid-gap: 10px 10px;
   }
-  #page .pagetop {
+  .pagetop {
     grid-column-start: 1;
     grid-column-end: span 2;
     min-height: 20vh;
   }
 
-  #page .pagename {
+  .pagename {
     font-size: 2em;
   }
 
-  #page a img.framed {
-    width: 50vw;
-    height: 50vw;
-    border-width: 4vw;
+  figure{
+  min-height: 100px;
+  height: auto;
+  margin: 10px;
+  padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  figure{
+  min-height: 100px;
+  height: auto;
+  margin: 5px;
+  padding: 17px;
   }
 
-  #page a div.info {
-    margin-top: -4.5vw;
-    /* margin-top: -2.7vh; */
-    flex-direction: row-reverse;
-    margin-left: 4vw;
-    margin-right: 4vw;
+  figure .name{
+    font-size: .9em;
   }
 
-  #page .itemtext {
-    font-size: 3.5vw;
-
-    /* position: absolute; */
-    /* bottom: 1vh; */
-    /* right: 11%; */
-    /* font-size: 3vw; */
+  figure .price{
+    font-size: .9em;
   }
   #page .itemprice {
     font-size: 3.5vw;
 
-    /* position: absolute; */
-    /* bottom: 1vh; */
-    /* left: 11%; */
-    /* font-size: 5vw; */
+  figure a:hover {
+    font-size: 1em;
   }
 }

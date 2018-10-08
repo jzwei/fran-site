@@ -8,7 +8,12 @@
   </head>
   <body>
     <nav>
-      <a id="logo" href="../">Fran Site</a>
+      <a id="logo" href="../">sparkle town</a>
+      <div class="pagelinks">
+        <a href="#">bigger things</a>
+        <span>//</span>
+        <a href="../small/">smaller things</a>
+      </div>
       <div id="links"><a href="../about">About</a> <a href="#">Contact</a></div>
     </nav>
 
@@ -17,18 +22,26 @@
         <div class="pagename " href="#">bigger things</div>
       </div>
 
-      <a href="/" class="">
-        <img class="framed" src="../images/roundbag.jpg" />
-        <div class="itemtext">round bag</div>
-        <div class="itemprice">$148</div>
-      </a>
-      <a href="/" class="">
-        <img class="framed" src="../images/rectanglebag.jpg" />
-        <div class="itemtext">rectangle bag</div>
-        <div class="itemprice">$128</div>
-      </a>
+    <div class="gallery">
+      <figure>
+        <a href="">
+          <img src="../images/roundbag.jpg">
+          <figcaption class="name">round bag</figcaption>
+        </a>
+        <figcaption class="price">$148</figcaption> 
+      </figure>
+      <figure>
+        <a href="">
+          <img src="../images/rectanglebag.jpg">
+          <figcaption class="name">rectangle bag</figcaption>
+        </a>
+        <figcaption class="price">$128</figcaption> 
+      </figure>
     </div>
+
     <footer class="footer">Copyright Etc Fran 2050</footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery-canvas-sparkles.min.js"></script>
     <script type="text/javascript" src="../index.js"></script>
   </body>
 </html>
