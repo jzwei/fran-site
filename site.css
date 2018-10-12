@@ -18,279 +18,298 @@ html {
   box-sizing: border-box;
 }
 
-nav {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: white;
-  font-size: 3vh;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+/*NAV & FOOTER START*/
+  nav {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    font-size: 3vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.8);
+  }
 
-nav #links {
-  /* Flexbox would be another way to do this */
-  text-align: right;
-}
+  nav #links {
+    /* Flexbox would be another way to do this */
+    text-align: right;
+  }
 
-nav .pagelinks {
-  /* need to make these only one line mobile */
-  text-align: center;
-}
+  nav .pagelinks {
+    /* need to make these only one line mobile */
+    text-align: center;
+  }
 
-nav a {
-  color: rgb(20, 20, 20);
-  text-decoration: none;
-  margin: 0px 10px;
-  transition: 0.3s ease all;
-}
+  nav a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    margin: 0px 10px;
+    transition: 0.3s ease all;
+  }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 10px;
-}
+  /* Maybe a color on hover for the nav links? */
+  nav a:hover {
+    color: rgb(180, 50, 180);
+  }
 
-/* Maybe a color on hover for the nav links? */
-nav a:hover {
-  color: rgb(180, 50, 180);
-}
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*text-align: center;*/
+    /*margin: 70px;*/
+    /*margin-bottom: 10px;*/
+    padding: 10px 70px 70px 70px;
+    background-color: rgb(255, 211, 211);
+    border-top: solid 5px white;
+  }
 
-.indexname {
-  text-align: center;
-  font-size: 5em;
-  margin: 7vh 10px 0vh 10px;
-  padding: 2vh;
-  border-style: solid;
-  border-color: white;
-  border-width: 3vh;
-}
+  footer .footertopic{
+    font-size: 2em;
+    text-decoration: underline;
+    color: white;
+  }
 
-#content {
-  padding: 10px;
-  display: grid;
-  grid-gap: 10px;
-}
+  footer .footerinfo a{
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  footer .footerinfo a:hover{
+    font-style: italic;
+  }
 
-#content a.item {
-  height: 50vh;
-  max-height: 500px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s ease all;
-  text-decoration: none;
-  padding: 20vh;
-  border: solid;
-  border-color: white;
-  border-width: 3vh;
-}
+  footer .logoimage img{
+    max-width: 150px;
+    float: right;
+  }
+/*NAV & FOOTER END*/
 
-#content a.item span {
-  padding: 4vh;
-  transition: 0.5s ease all;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-}
+/*INDEX PAGE START*/
+  #indexcontent {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
 
-#content a.item:hover span {
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 4em;
-}
+  .indexname {
+    text-align: center;
+    font-size: 5em;
+    padding: 70px 0;
+    margin-top: 35px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(255, 211, 211);
+    border-bottom: solid 5px white;
+    color: white;
+  }
 
-/*  PAGES */
-#page {
-  padding: 10px;
-}
+  #indexcontent a.item {
+    height: 50vh;
+    max-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 2.5em;
+  }
 
-.pagetop {
-  display: flex;
-  margin-top: 45px;
-}
+  #indexcontent a.item:hover {
+    font-size: 3em;
+  }
+/*INDEX PAGE END*/
 
-.pagename {
-  width: 100%;
-  font-size: 4.5em;
-  background-color: rgba(252, 244, 250, 0.9);
-  text-align: center;
-  margin: 70px 0;
-  padding: 15px 0;
-  color: rgb(96, 96, 96);
-}
+/*  PRODUCT PAGE START */
+  #page {
+    padding: 10px;
+  }
 
-.topimage {
-  background-image: url("./images/glitter.jpg" );
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .pagetop {
+    display: flex;
+    margin-top: 45px;
+  }
 
-.gallery{
-  display: flex;
-  /*width: 900px;*/
-  margin: 10px auto;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .pagename {
+    width: 100%;
+    font-size: 4.5em;
+    background-color: rgba(252, 244, 250, 0.9);
+    text-align: center;
+    margin: 70px 0;
+    padding: 15px 0;
+    color: rgb(96, 96, 96);
+  }
 
-figure{
-  width: 350px;
-  height: 350px;
-  margin: 10px;
-  padding: 24px;
-  box-sizing: border-box;
-  background-color: #fff;
-  position: relative;
-}
+  .topimage {
+    background-image: url("./images/glitter.jpg" );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-figure img{
-  width: 100%;
-}
+  .gallery{
+    display: flex;
+    /*width: 900px;*/
+    margin: 10px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-figure .name{
-  position: absolute;
-  right: 4px;
-  bottom: 2px;
-  font-size: 1.2em;
-}
+  figure{
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+  }
 
-figure .price{
-  position: absolute;
-  left: 4px;
-  bottom: 2px;
-  font-size: 1.1em;
-  font-family: "Courier New", Courier, monospace;
-}
+  figure img{
+    width: 100%;
+  }
 
-figure a:hover {
-  font-style: italic;
-  /*font-size: 1.5em;*/
-  transition: all 0.3s ease;
-}
+  figure .name{
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+    font-size: 1.2em;
+  }
 
+  figure .price{
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+    font-size: 1.1em;
+    font-family: "Courier New", Courier, monospace;
+  }
 
-/*DETAIL*/
-.detailwrapper {
-  display: grid;
-  padding-top: 70px;
-  max-width: 800px;
-  /*height: 600px;*/
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 1fr;
-  grid-gap: 1rem;
-  margin: 0 auto;
-}
+  figure a:hover {
+    font-style: italic;
+    /*font-size: 1.5em;*/
+    transition: all 0.3s ease;
+  }
+/*PRODUCT PAGE END*/
 
-.detailpage {
-  display: flex;
-  justify-content: center;
-  /*background-color: red;*/
-}
+/*DETAIL PAGE START */
+  .detailwrapper {
+    display: grid;
+    padding-top: 70px;
+    max-width: 800px;
+    /*height: 600px;*/
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    margin: 0 auto;
+  }
 
-.detailtext {
-  /*background-color: pink;*/
-  list-style: none;
-  padding: 10px;
-}
+  .detailpage {
+    display: flex;
+    justify-content: center;
+    /*background-color: red;*/
+  }
 
-.sp-wrap {
-  /**************
-    Set max-width to your thumbnail width
-  ***************/
-  max-width: 500px;
-}
+  .detailtext {
+    /*background-color: pink;*/
+    list-style: none;
+    padding: 10px;
+  }
 
-/* Thumbnails */
-.sp-thumbs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.sp-thumbs img {
-  min-height: 100px;
-  min-width: 100px;
-  max-width: 100px;
-}
-.sp-thumbs a:link, .sp-thumbs a:visited {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  opacity: .3;
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
-
-}
-.sp-thumbs a:hover {
-  opacity: 1;
-}
-
-/* Styles for the currently selected thumbnail */
-.sp-thumbs a:active, .sp-current {
-  opacity: 1!important;
-  position: relative;
-}
-
-/* Image currently being viewed */
-.sp-large {
-  position: relative;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-.sp-large a img {
-  max-width: 100%;
-  height: auto;
-}
-.sp-large a {
-  display: block;
-}
-
-/* Panning Zoomed Image */
-.sp-zoom {
-  position: absolute;
-  cursor: zoom-in;
-}
-
-@media screen and (max-width: 400px) {
   .sp-wrap {
-    margin: 0 0 15px 0;
+    /**************
+      Set max-width to your thumbnail width
+    ***************/
+    max-width: 500px;
   }
-  #sp-prev, #sp-next {
-    top: auto;
-    margin-top: 0;
-    bottom: 25px;
+
+  /* Thumbnails */
+  .sp-thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-}
+  .sp-thumbs img {
+    min-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .sp-thumbs a:link, .sp-thumbs a:visited {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    opacity: .3;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+
+  }
+  .sp-thumbs a:hover {
+    opacity: 1;
+  }
+
+  /* Styles for the currently selected thumbnail */
+  .sp-thumbs a:active, .sp-current {
+    opacity: 1!important;
+    position: relative;
+  }
+
+  /* Image currently being viewed */
+  .sp-large {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .sp-large a img {
+    max-width: 100%;
+    height: auto;
+  }
+  .sp-large a {
+    display: block;
+  }
+
+  /* Panning Zoomed Image */
+  .sp-zoom {
+    position: absolute;
+    cursor: zoom-in;
+  }
+
+  @media screen and (max-width: 400px) {
+    .sp-wrap {
+      margin: 0 0 15px 0;
+    }
+    #sp-prev, #sp-next {
+      top: auto;
+      margin-top: 0;
+      bottom: 25px;
+    }
+  }
 /*DETAIL PAGE END*/
 
 
-/* ABOUT */
-body.about div{
-  display: flex;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-body.about .info {
-  min-height: 40vh;
-}
-body.about divdiv {
-  max-width: 500px;
-}
+/* ABOUT PAGE START*/
+  body.about div{
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  body.about .info {
+    min-height: 40vh;
+  }
+  body.about divdiv {
+    max-width: 500px;
+  }
+/*ABOUT PAGE END*/
 
-/* SMALL STUFF */
+/* SMALL STUFF START*/
 @media only screen and (max-width: 600px) {
   body,
   {
