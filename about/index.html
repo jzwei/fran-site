@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../site.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
     <title>Fran Site - Item One</title>
   </head>
   <body class="about">
@@ -17,113 +17,56 @@
     <div >
 
       <!-- CONTACT FORM BELOW-->
-      		<!-- <div class="">
-      			<div class="">
-      				<form role="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdNGErZBgAwFkBMGX0XYZ2D1WetJioPKHI-BZU_xxIXuFWyIg/viewform?embedded=true" target="hidden_iframe" onsubmit="submitted=true;"> -->
+    <div class="container container-width">
+    			<div class="row form-outline">
+    				<form role="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdNGErZBgAwFkBMGX0XYZ2D1WetJioPKHI-BZU_xxIXuFWyIg/viewform?embedded=true" target="hidden_iframe" onsubmit="submitted=true;">
 
-      					<!-- <h4 class=""><img class="" src="images/logos/contact.jpg">Contact me!</h4> -->
+    					<!-- <h4 class=""><img class="contact-img" src="images/logos/contact.jpg">Contact me!</h4> -->
 
-      						<!-- <div class="form-group">
-      							<label for="name" class="control-label">Name</label>
-      							<div class="">
-      								<input type="text" class="form-control" id="entry.1508233390" name="entry.1508233390" placeholder="First & Last Name" value="">
-      							</div>
-      						</div>
+    						<div class="form-group">
+    							<label for="name" class="control-label">Name</label>
+    							<div class="">
+    								<input type="text" class="form-control" id="entry.1508233390" name="entry.1508233390" placeholder="First & Last Name" value="">
+    							</div>
+    						</div>
 
-      						<div class="form-group">
-      							<label for="email" class="control-label">Email</label>
-      							<div class="">
-      								<input type="email" class="form-control" id="entry.338293450" name="entry.338293450" placeholder="example@something.com" value="">
-      							</div>
-      						</div>
+    						<div class="form-group">
+    							<label for="email" class="control-label">Email</label>
+    							<div class="">
+    								<input type="email" class="form-control" id="entry.338293450" name="entry.338293450" placeholder="example@something.com" value="">
+    							</div>
+    						</div>
 
-      						<div class="form-group">
-      							<label for="subject" class="control-label">Subject</label>
-      							<div class="">
-      								<input type="subject" class="form-control" id="entry.1973561110" name="entry.1973561110" placeholder="Subject" value="">
-      							</div>
-      						</div>
-      						<div class="form-group">
-      							<label for="message" class="control-label">Message</label>
-      							<div class="">
-      								<textarea class="form-control" rows="6" id="entry.408225715" name="entry.408225715" placeholder="Dearest Jane..."></textarea>
-      							</div>
-      						</div>
-      						<div class="form-group">
-      							<div>
-      								<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
-      							</div>
-      						</div>
-      						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-      						<div class="red">
-      						<script type="text/javascript">var submitted=false;</script>
-                  <script
-                    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-                    crossorigin="anonymous">
-                  </script>
-      						<script type="text/javascript">
-      						$('#gform').on('submit', function(e) {
-      						  $('#gform *').fadeOut(2000);
-      						  $('#gform').prepend('Message Submitted!');
-      						  });
-      						</script>
-                </div>
-      				</form>
-      			</div>
-      		</div> -->
-      			<!-- CONTACT FORM ENDS -->
-
-            <div class="container container-width">
-            			<div class="row form-outline">
-            				<form role="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdNGErZBgAwFkBMGX0XYZ2D1WetJioPKHI-BZU_xxIXuFWyIg/viewform?embedded=true" target="hidden_iframe" onsubmit="submitted=true;">
-
-            					<h4 class="align-left grey-text col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2"><img class="contact-img" src="images/logos/contact.jpg">Contact me!</h4>
-
-            						<div class="form-group col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
-            							<label for="name" class="control-label">Name</label>
-            							<div class="">
-            								<input type="text" class="form-control" id="entry.1508233390" name="entry.1508233390" placeholder="First & Last Name" value="">
-            							</div>
-            						</div>
-
-            						<div class="form-group col-xs-12 col-sm-6 col-md-5 col-lg-4">
-            							<label for="email" class="control-label">Email</label>
-            							<div class="">
-            								<input type="email" class="form-control" id="entry.338293450" name="entry.338293450" placeholder="example@something.com" value="">
-            							</div>
-            						</div>
-
-            						<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            							<label for="subject" class="control-label">Subject</label>
-            							<div class="">
-            								<input type="subject" class="form-control" id="entry.1973561110" name="entry.1973561110" placeholder="Subject" value="">
-            							</div>
-            						</div>
-            						<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            							<label for="message" class="control-label">Message</label>
-            							<div class="">
-            								<textarea class="form-control" rows="6" id="entry.408225715" name="entry.408225715" placeholder="Dearest Jane..."></textarea>
-            							</div>
-            						</div>
-            						<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            							<div>
-            								<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
-            							</div>
-            						</div>
-            						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-            						<div class="red"><script src="assets/js/jquery.min.js"></script>
-            						<script type="text/javascript">var submitted=false;</script>
-            						<script type="text/javascript">
-            						$('#gform').on('submit', function(e) {
-            						  $('#gform *').fadeOut(2000);
-            						  $('#gform').prepend('Message Submitted!');
-            						  });
-            						</script></div>
-            				</form>
-            			</div>
-            		</div>
-
+    						<div class="form-group">
+    							<label for="subject" class="control-label">Subject</label>
+    							<div class="">
+    								<input type="subject" class="form-control" id="entry.1973561110" name="entry.1973561110" placeholder="Subject" value="">
+    							</div>
+    						</div>
+    						<div class="form-group">
+    							<label for="message" class="control-label">Message</label>
+    							<div class="">
+    								<textarea class="form-control" rows="6" id="entry.408225715" name="entry.408225715" placeholder="Dearest Jane..."></textarea>
+    							</div>
+    						</div>
+    						<div class="form-group">
+    							<div>
+    								<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
+    							</div>
+    						</div>
+    						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    						<div class="red"><script src="src="https://code.jquery.com/jquery-3.3.1.slim.min.js></script>
+    						<script type="text/javascript">var submitted=false;</script>
+    						<script type="text/javascript">
+    						$('#gform').on('submit', function(e) {
+    						  $('#gform *').fadeOut(2000);
+    						  $('#gform').prepend('Message Submitted!');
+    						  });
+    						</script></div>
+    				</form>
+    			</div>
+    		</div>
+      <!-- CONTACT FORM ENDS -->
     </div>
   </div>
     <div class="info footer">Copyright Etc Fran 2050</div>
