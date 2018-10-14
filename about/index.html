@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../site.css">
-    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+
     <title>Fran Site - Item One</title>
   </head>
   <body class="about">
@@ -56,11 +56,11 @@
     						</div>
     						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
     						<div class="red"><script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
-    						<script type="text/javascript">var submitted=false;</script>
+    						<script type="text/javascript">var submitted=false;</script><script src="https://code.jquery.com/jquery.js"></script>
     						<script type="text/javascript">
-    						('#gform').on('submit', function(e) {
-    						  ('#gform *').fadeOut(2000);
-    						  ('#gform').prepend('Message Submitted!');
+    						$('#gform').on('submit', function(e) {
+    						  $('#gform *').fadeOut(2000);
+    						  $('#gform').prepend('Message Submitted!');
     						  });
     						</script></div>
     				</form>
