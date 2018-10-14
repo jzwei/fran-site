@@ -14,12 +14,61 @@
 
     <div id="page">
     <div >
-      <h1>🐕🐕🐕🐕</h1>
-      <p>Lorem  dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-      <p>Werfwe labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-      <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-      <p> Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-      <p>Goelfo labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+
+      <!-- CONTACT FORM BELOW-->
+      		<div class="">
+      			<div class="">
+      				<form role="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdNGErZBgAwFkBMGX0XYZ2D1WetJioPKHI-BZU_xxIXuFWyIg/viewform?embedded=true" target="hidden_iframe" onsubmit="submitted=true;">
+
+      					<h4 class=""><img class="" src="images/logos/contact.jpg">Contact me!</h4>
+
+      						<div class="form-group">
+      							<label for="name" class="control-label">Name</label>
+      							<div class="">
+      								<input type="text" class="form-control" id="entry.1508233390" name="entry.1508233390" placeholder="First & Last Name" value="">
+      							</div>
+      						</div>
+
+      						<div class="form-group">
+      							<label for="email" class="control-label">Email</label>
+      							<div class="">
+      								<input type="email" class="form-control" id="entry.338293450" name="entry.338293450" placeholder="example@something.com" value="">
+      							</div>
+      						</div>
+
+      						<div class="form-group">
+      							<label for="subject" class="control-label">Subject</label>
+      							<div class="">
+      								<input type="subject" class="form-control" id="entry.1973561110" name="entry.1973561110" placeholder="Subject" value="">
+      							</div>
+      						</div>
+      						<div class="form-group">
+      							<label for="message" class="control-label">Message</label>
+      							<div class="">
+      								<textarea class="form-control" rows="6" id="entry.408225715" name="entry.408225715" placeholder="Dearest Jane..."></textarea>
+      							</div>
+      						</div>
+      						<div class="form-group">
+      							<div">
+      								<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
+      							</div>
+      						</div>
+      						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      						<div class="red"><script src="assets/js/jquery.min.js"></script>
+      						<script type="text/javascript">var submitted=false;</script>
+      						<script type="text/javascript">
+      						$('#gform').on('submit', function(e) {
+      						  $('#gform *').fadeOut(2000);
+      						  $('#gform').prepend('Message Submitted!');
+      						  });
+      						</script></div>
+      				</form>
+      			</div>
+      		</div>
+      			<!-- CONTACT FORM ENDS -->
+
+
+
     </div>
   </div>
     <div class="info footer">Copyright Etc Fran 2050</div>
