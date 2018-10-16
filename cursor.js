@@ -1,5 +1,5 @@
 (function fairyDustCursor() {
-  let logo_el = document.querySelector("img.logo.cursor");
+  let doggo_els = document.querySelectorAll("img.cursor");
   var possibleColors = ["#D61C59", "#E7D84B", "#1B8798"];
   var width = window.innerWidth;
   var height = window.innerHeight;
@@ -13,13 +13,11 @@
 
   // Bind events that are needed
   function bindEvents() {
-    // if you want it just on your doggo
-    el = logo_el;
-    // if you want it to apply to the whole page
-    // el = document;
-    el.addEventListener("mousemove", onMouseMove);
-    el.addEventListener("touchmove", onTouchMove);
-    el.addEventListener("touchstart", onTouchMove);
+    doggo_els.forEach(el => {
+      el.addEventListener("mousemove", onMouseMove);
+      el.addEventListener("touchmove", onTouchMove);
+      el.addEventListener("touchstart", onTouchMove);
+    });
 
     window.addEventListener("resize", onWindowResize);
   }
