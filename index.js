@@ -1,5 +1,3 @@
-// import "./images/fran.jpg";
-console.log("hello!!!!");
 $(".item").sparkle({
   direction: "down"
 });
