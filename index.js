@@ -4,10 +4,10 @@ $(".item").sparkle({
 
 $(".topimage").sparkle({
   direction: "down",
-  minSize: 30,
+  minSize: 20,
   // maxSize: 20,
-  color: "rainbow",
-  count: 100
+  color: "white",
+  count: 50
 });
 
 // cancel the default events
@@ -26,9 +26,9 @@ setTimeout(stop_sparkle, 3500);
 $("figure img").sparkle({
   direction: "down",
   minSize: 10,
-  maxSize: 20,
-  color: "rainbow",
-  count: 50
+  maxSize: 15,
+  color: "white",
+  count: 25
 });
 
 // $(document.body).off("click", ".sp-lightbox");
