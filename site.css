@@ -90,6 +90,7 @@ footer .logoimage img {
 
 .cursor {
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=115007), auto;
+  -webkit-user-drag: none;
 }
 
 /*NAV & FOOTER END*/
