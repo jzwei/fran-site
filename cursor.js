@@ -1,4 +1,5 @@
 (function fairyDustCursor() {
+  let logo_el = document.querySelector("img.logo.cursor");
   var possibleColors = ["#D61C59", "#E7D84B", "#1B8798"];
   var width = window.innerWidth;
   var height = window.innerHeight;
@@ -12,9 +13,13 @@
 
   // Bind events that are needed
   function bindEvents() {
-    document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("touchmove", onTouchMove);
-    document.addEventListener("touchstart", onTouchMove);
+    // if you want it just on your doggo
+    el = logo_el;
+    // if you want it to apply to the whole page
+    // el = document;
+    el.addEventListener("mousemove", onMouseMove);
+    el.addEventListener("touchmove", onTouchMove);
+    el.addEventListener("touchstart", onTouchMove);
 
     window.addEventListener("resize", onWindowResize);
   }
@@ -23,13 +28,13 @@
     width = window.innerWidth;
     height = window.innerHeight;
   }
-
+  // changed by zach, all occurences of pageX and pageY were clientX and clientY
   function onTouchMove(e) {
     if (e.touches.length > 0) {
       for (var i = 0; i < e.touches.length; i++) {
         addParticle(
-          e.touches[i].clientX,
-          e.touches[i].clientY,
+          e.touches[i].pageX,
+          e.touches[i].pageY,
           possibleColors[Math.floor(Math.random() * possibleColors.length)]
         );
       }
@@ -37,9 +42,9 @@
   }
 
   function onMouseMove(e) {
-    cursor.x = e.clientX;
-    cursor.y = e.clientY;
-
+    cursor.x = e.pageX;
+    cursor.y = e.pageY;
+    // console.log(cursor.x, cursor.y);
     addParticle(
       cursor.x,
       cursor.y,
@@ -96,6 +101,8 @@
         y: 1
       };
       // console.log("a");
+      // this.position = { x: 0, y: 0 };
+      // this.position = { x: x - 10, y: y + 100 };
       this.position = { x: x - 10, y: y - 0 };
       this.initialStyles.color = color;
 
