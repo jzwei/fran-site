@@ -369,11 +369,11 @@ figure a:hover {
    {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 0.5fr);
-    grid-gap: 15px 0px;
+    grid-gap: 10px 10px;
   }
   .pagetop {
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: span 2;
     min-height: 20vh;
   }
 
@@ -404,6 +404,8 @@ figure a:hover {
   figure .price {
     font-size: 0.9em;
   }
+  #page .itemprice {
+    font-size: 3.5vw;
 
   figure a:hover {
     font-size: 1em;
