@@ -19,305 +19,354 @@ html {
 }
 
 /*NAV & FOOTER START*/
-  nav {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: white;
-    font-size: 3vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(255,255,255,0.8);
-  }
+nav {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  font-size: 3vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
-  nav #links {
-    /* Flexbox would be another way to do this */
-    text-align: right;
-  }
+nav #links {
+  /* Flexbox would be another way to do this */
+  text-align: right;
+}
 
-  nav .pagelinks {
-    /* need to make these only one line mobile */
-    text-align: center;
-  }
+nav .pagelinks {
+  /* need to make these only one line mobile */
+  text-align: center;
+}
 
-  nav a {
-    color: rgb(20, 20, 20);
-    text-decoration: none;
-    margin: 0px 10px;
-    transition: 0.3s ease all;
-  }
+nav a {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  margin: 0px 10px;
+  transition: 0.3s ease all;
+}
 
-  /* Maybe a color on hover for the nav links? */
-  nav a:hover {
-    color: rgb(180, 50, 180);
-  }
+/* Maybe a color on hover for the nav links? */
+nav a:hover {
+  color: rgb(180, 50, 180);
+}
 
-  footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /*text-align: center;*/
-    /*margin: 70px;*/
-    /*margin-bottom: 10px;*/
-    padding: 10px 70px 70px 70px;
-    background-color: rgb(255, 211, 211);
-    border-top: solid 5px white;
-  }
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*text-align: center;*/
+  /*margin: 70px;*/
+  /*margin-bottom: 10px;*/
+  padding: 10px 70px 70px 70px;
+  background-color: rgb(255, 211, 211);
+  border-top: solid 5px white;
+}
 
-  footer .footertopic{
-    font-size: 2em;
-    text-decoration: underline;
-    color: white;
-  }
+footer .footertopic {
+  font-size: 2em;
+  text-decoration: underline;
+  color: white;
+}
 
-  footer .footerinfo a{
-    display: block;
-    text-decoration: none;
-    font-size: 1em;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  footer .footerinfo a:hover{
-    font-style: italic;
-  }
+footer .footerinfo a {
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .footerinfo a:hover {
+  font-style: italic;
+}
 
-  footer .logoimage img{
-    max-width: 150px;
-    float: right;
-  }
+footer .logoimage img {
+  max-width: 150px;
+  max-height: 150px;
+  float: right;
+}
+
+.cursor {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=115007), auto;
+}
+
 /*NAV & FOOTER END*/
 
 /*INDEX PAGE START*/
-  #indexcontent {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
+#indexcontent {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
 
-  .indexname {
-    text-align: center;
-    font-size: 5em;
-    padding: 70px 0;
-    margin-top: 35px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: rgb(255, 211, 211);
-    border-bottom: solid 5px white;
-    color: white;
-  }
+.indexname {
+  text-align: center;
+  font-size: 5em;
+  padding: 70px 0;
+  margin-top: 35px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(255, 211, 211);
+  border-bottom: solid 5px white;
+  color: white;
+}
 
-  #indexcontent a.item {
-    height: 50vh;
-    max-height: 500px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    font-size: 2.5em;
-  }
+#indexcontent a.item {
+  height: 50vh;
+  max-height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2.5em;
+}
 
-  #indexcontent a.item:hover {
-    font-size: 3em;
-  }
+#indexcontent a.item:hover {
+  font-size: 3em;
+}
 /*INDEX PAGE END*/
 
 /*  PRODUCT PAGE START */
-  #page {
-    padding: 10px;
-  }
+#page {
+  padding: 10px;
+}
 
-  .pagetop {
-    display: flex;
-    margin-top: 45px;
-  }
+.pagetop {
+  display: flex;
+  margin-top: 45px;
+  border-bottom: solid 5px white;
+}
 
-  .pagename {
-    width: 100%;
-    font-size: 4.5em;
-    background-color: rgba(252, 244, 250, 0.9);
-    text-align: center;
-    margin: 70px 0;
-    padding: 15px 0;
-    color: rgb(96, 96, 96);
-  }
+.pagename {
+  width: 100%;
+  font-size: 4.5em;
+  background-color: rgba(252, 244, 250, 0.9);
+  text-align: center;
+  margin: 30px 0;
+  padding: 15px 0;
+  color: rgb(96, 96, 96);
+}
 
-  .topimage {
-    background-image: url("./images/glitter.jpg" );
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.topimage {
+  background-image: url("./images/glitter.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  .gallery{
-    display: flex;
-    /*width: 900px;*/
-    margin: 10px auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.gallery {
+  display: flex;
+  /*width: 900px;*/
+  margin: 10px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  figure{
-    width: 350px;
-    height: 350px;
-    margin: 10px;
-    padding: 24px;
-    box-sizing: border-box;
-    background-color: #fff;
-    position: relative;
-  }
+figure {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+}
 
-  figure img{
-    width: 100%;
-  }
+figure img {
+  width: 100%;
+}
 
-  figure .name{
-    position: absolute;
-    right: 4px;
-    bottom: 2px;
-    font-size: 1.2em;
-  }
+figure .name {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  font-size: 1.2em;
+}
 
-  figure .price{
-    position: absolute;
-    left: 4px;
-    bottom: 2px;
-    font-size: 1.1em;
-    font-family: "Courier New", Courier, monospace;
-  }
+figure .price {
+  position: absolute;
+  left: 4px;
+  bottom: 2px;
+  font-size: 1.1em;
+  font-family: "Courier New", Courier, monospace;
+}
 
-  figure a:hover {
-    font-style: italic;
-    /*font-size: 1.5em;*/
-    transition: all 0.3s ease;
-  }
+figure a:hover {
+  font-style: italic;
+  /*font-size: 1.5em;*/
+  transition: all 0.3s ease;
+}
 /*PRODUCT PAGE END*/
 
 /*DETAIL PAGE START */
-  .detailwrapper {
-    display: grid;
-    padding-top: 70px;
-    max-width: 800px;
-    /*height: 600px;*/
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 1fr;
-    grid-gap: 1rem;
-    margin: 0 auto;
-  }
+.detailwrapper {
+  display: grid;
+  padding-top: 70px;
+  max-width: 800px;
+  /*height: 600px;*/
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  margin: 0 auto 40px;
+}
 
-  .detailpage {
-    display: flex;
-    justify-content: center;
-    /*background-color: red;*/
-  }
+.detailpage {
+  display: flex;
+  justify-content: center;
+  /*background-color: red;*/
+}
 
-  .detailtext {
-    /*background-color: pink;*/
-    list-style: none;
-    padding: 10px;
-  }
+.detailtext {
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+}
 
+.detailitemname {
+  font-size: 2em;
+}
+
+.sp-wrap {
+  display: none;
+  line-height: 0;
+  font-size: 0;
+  position: relative;
+  float: left;
+  /*Set max-width to your thumbnail width*/
+  max-width: 800px;
+}
+
+/* Thumbnails */
+.sp-thumbs {
+  text-align: center;
+}
+
+.sp-thumbs a:link,
+.sp-thumbs a:visited {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  opacity: 0.3;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.sp-thumbs a:hover {
+  opacity: 1;
+}
+
+/* Styles for the currently selected thumbnail */
+.sp-thumbs a:active,
+.sp-current {
+  opacity: 1 !important;
+  position: relative;
+}
+
+/* Image currently being viewed */
+.sp-large {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.sp-large a img {
+  max-width: 100%;
+  height: auto;
+}
+.sp-large a {
+  display: block;
+}
+
+/* Panning Zoomed Image */
+.sp-zoom {
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+  display: none;
+}
+
+/* Lightbox disabled*/
+.sp-lightbox {
+  display: none !important;
+}
+
+/* Tweak styles for small viewports */
+@media screen and (max-width: 400px) {
   .sp-wrap {
-    /**************
-      Set max-width to your thumbnail width
-    ***************/
-    max-width: 500px;
+    margin: 0 0 15px 0;
   }
-
-  /* Thumbnails */
-  .sp-thumbs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .sp-thumbs img {
-    min-height: 100px;
-    min-width: 100px;
-    max-width: 100px;
-  }
-  .sp-thumbs a:link, .sp-thumbs a:visited {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    opacity: .3;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-
-  }
-  .sp-thumbs a:hover {
-    opacity: 1;
-  }
-
-  /* Styles for the currently selected thumbnail */
-  .sp-thumbs a:active, .sp-current {
-    opacity: 1!important;
-    position: relative;
-  }
-
-  /* Image currently being viewed */
-  .sp-large {
-    position: relative;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-  }
-  .sp-large a img {
-    max-width: 100%;
-    height: auto;
-  }
-  .sp-large a {
-    display: block;
-  }
-
-  /* Panning Zoomed Image */
-  .sp-zoom {
-    position: absolute;
-    cursor: zoom-in;
-  }
-
-  @media screen and (max-width: 400px) {
-    .sp-wrap {
-      margin: 0 0 15px 0;
-    }
-    #sp-prev, #sp-next {
-      top: auto;
-      margin-top: 0;
-      bottom: 25px;
-    }
-  }
+}
 /*DETAIL PAGE END*/
 
-
 /* ABOUT PAGE START*/
-  body.about div{
-    display: flex;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
-  body.about .info {
-    min-height: 40vh;
-  }
-  body.about divdiv {
-    max-width: 500px;
-  }
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.about-img {
+  max-width: 200px;
+}
+.contact-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 10px;
+}
+.contact-top {
+}
+.contact-img {
+  max-width: 150px;
+}
+.contact-text {
+}
+.input {
+  width: 100%;
+}
+.nameemailwrap {
+  display: grid;
+}
+.name-wrap {
+  width: 95%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.email-wrap {
+  width: 95%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  justify-self: end;
+}
+
+.form-entry {
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
 /*ABOUT PAGE END*/
 
 /* SMALL STUFF START*/
 @media only screen and (max-width: 600px) {
-  body,
-  {
+  body {
     /* for debug, to make it obvious it's working */
     /* color: red; */
     /* background-color: black; */
   }
-  {
+   {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 0.5fr);
     grid-gap: 10px 10px;
@@ -332,28 +381,28 @@ html {
     font-size: 2em;
   }
 
-  figure{
-  min-height: 100px;
-  height: auto;
-  margin: 10px;
-  padding: 24px;
+  figure {
+    min-height: 100px;
+    height: auto;
+    margin: 10px;
+    padding: 24px;
   }
 }
 
 @media only screen and (max-width: 200px) {
-  figure{
-  min-height: 100px;
-  height: auto;
-  margin: 5px;
-  padding: 17px;
+  figure {
+    min-height: 100px;
+    height: auto;
+    margin: 5px;
+    padding: 17px;
   }
 
-  figure .name{
-    font-size: .9em;
+  figure .name {
+    font-size: 0.9em;
   }
 
-  figure .price{
-    font-size: .9em;
+  figure .price {
+    font-size: 0.9em;
   }
   #page .itemprice {
     font-size: 3.5vw;
