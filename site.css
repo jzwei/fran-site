@@ -272,8 +272,9 @@ figure a:hover {
 .detailprice {
   font-family: "Courier New", Courier, monospace;
   padding: 10px;
+  font-size: 1.2em;
 }
-.detailtext li {
+.deet {
   padding: 5px;
   padding-left: 15px;
   font-size: .9em;
