@@ -93,7 +93,8 @@ footer .logoimage img {
 }
 
 .cursor {
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=115007), auto;
+  /*cursor: url(https://www.rw-designer.com/cursor-extern.php?id=115007), auto;*/
+  cursor: url(images/Comb_Black.cur), auto;
   -webkit-user-drag: none;
 }
 
