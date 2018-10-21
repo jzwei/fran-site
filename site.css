@@ -1,3 +1,5 @@
+@import "hamburger.css";
+
 @font-face {
   font-family: "script-font";
   src: url(webfont.ttf);
@@ -19,49 +21,61 @@ html {
 }
 
 /*NAV & FOOTER START*/
-nav {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: white;
-  font-size: 1.5em;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8);
-  align-items: center;
-}
+@media only screen and (min-width: 500px) {
+  div.hamburger {
+    display: none;
+  }
+  body {
+    /*background-color: black !important;*/
+  }
+  /*.regnav {
+    display: none;
+  }*/
 
-nav #links {
-  /* Flexbox would be another way to do this */
-  text-align: right;
-}
+  nav {
+    padding: 10px;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    background-color: white;
+    font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+  }
 
-nav .navlogo {
-  max-height: 32px;
-}
+  nav #links {
+    /* Flexbox would be another way to do this */
+    text-align: right;
+  }
 
-nav a#logo {
-  margin: 0;
-  display: flex;
-}
+  .navlogo {
+    max-height: 32px;
+  }
 
-nav .pagelinks {
-  /* need to make these only one line mobile */
-  text-align: center;
-}
+  nav a#logo {
+    margin: 0;
+    display: flex;
+  }
 
-nav a {
-  color: rgb(20, 20, 20);
-  text-decoration: none;
-  margin: 0px 10px;
-  transition: 0.3s ease all;
-}
+  nav .pagelinks {
+    /* need to make these only one line mobile */
+    text-align: center;
+  }
 
-/* Maybe a color on hover for the nav links? */
-nav a:hover {
-  color: rgb(180, 50, 180);
+  nav a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    margin: 0px 10px;
+    transition: 0.3s ease all;
+  }
+
+  nav a:hover {
+    color: rgb(180, 50, 180);
+  }
 }
 
 footer {
@@ -125,7 +139,7 @@ footer .logoimage img {
   border-bottom: solid 5px white;
   color: white;
 }
-.indexlogo{
+.indexlogo {
   max-width: 100px;
   position: absolute;
   left: 25px;
@@ -265,7 +279,7 @@ figure a:hover {
   list-style: none;
   padding: 10px;
   /*font-family: 'Rubik', sans-serif;*/
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -284,14 +298,14 @@ figure a:hover {
 .deet {
   padding: 5px;
   padding-left: 15px;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .detailnotes {
   align-self: flex-end;
 }
 .productnotes {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .sp-wrap {
@@ -468,7 +482,7 @@ figure a:hover {
   }
   #page .itemprice {
     font-size: 3.5vw;
-
+  }
   figure a:hover {
     font-size: 1em;
   }
