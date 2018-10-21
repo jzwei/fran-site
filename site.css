@@ -465,7 +465,7 @@ figure a:hover {
   }
 }
 
-@media only screen and (max-width: 200px) {
+/* @media only screen and (max-width: 200px) {
   figure {
     min-height: 100px;
     height: auto;
@@ -486,4 +486,4 @@ figure a:hover {
   figure a:hover {
     font-size: 1em;
   }
-}
+} */
