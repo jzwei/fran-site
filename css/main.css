@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "script-font";
+  src: url(webfont.ttf);
+}
+
+/* Reset */
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: script-font;
+  background-color: rgb(252, 244, 250);
+}
+
+/* The * means everything, so this means everything should use  */
+/* box sizing ie https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing  */
+* {
+  box-sizing: border-box;
+}
+
+.cursor {
+  /*cursor: url(https://www.rw-designer.com/cursor-extern.php?id=115007), auto;*/
+  cursor: url(../images/Comb_Black.cur), auto;
+  -webkit-user-drag: none;
+}
+
+/*INDEX PAGE START*/
+#indexcontent {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.indexname {
+  text-align: center;
+  font-size: 5em;
+  padding: 70px 0;
+  margin-top: 42px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(255, 211, 211);
+  border-bottom: solid 5px white;
+  color: white;
+  /*display: flex;*/
+}
+.indexlogo {
+  max-height: 55px;
+  /*position: absolute;
+  left: 25px;
+  top: 176px;*/
+  transform: rotate(-20deg);
+}
+
+#indexcontent a.item {
+  height: 50vh;
+  max-height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2.5em;
+}
+
+#indexcontent a.item:hover {
+  font-size: 3em;
+}
+/*INDEX PAGE END*/

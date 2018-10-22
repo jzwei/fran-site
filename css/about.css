@@ -1,0 +1,44 @@
+* ABOUT PAGE START*/
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.about-img {
+  max-width: 200px;
+}
+.contact-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 10px;
+}
+.contact-top {
+}
+.contact-img {
+  max-width: 150px;
+}
+.contact-text {
+}
+.input {
+  width: 100%;
+}
+.nameemailwrap {
+  display: grid;
+}
+.name-wrap {
+  width: 95%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.email-wrap {
+  width: 95%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  justify-self: end;
+}
+
+.form-entry {
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/*ABOUT PAGE END*/

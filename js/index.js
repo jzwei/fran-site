@@ -34,11 +34,13 @@ $("figure img").sparkle({
 // $("a").on("touchstart", function(event) {
 
 // This is a hacky solution to the canvas-sparkles lib messing up touches of links on mobile.
-$("a").on("touchend", function(event) {
-  if (event.currentTarget.href) {
-    window.location = event.currentTarget.href;
-  }
-  return true;
-});
+// A better fix would be to actually fix the jquery-canvas-sparkles library
+// OR better still, if we adjust what we're selecting with the plugin (in this file), that might fix it!
+// $("a").on("touchend", function(event) {
+//   if (event.currentTarget.href) {
+//     window.location = event.currentTarget.href;
+//   }
+//   return true;
+// });
 
 // $(document.body).off("click", ".sp-lightbox");

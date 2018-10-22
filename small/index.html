@@ -3,23 +3,54 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="../css/site.css">
     <link rel='shortcut icon' href='../images/logo/favicon.gif' type='image/x-icon'/>
     <title>Fran Site</title>
   </head>
   <body>
-    <nav>
-      <a id="logo" href="../">
-        <img class="navlogo" src="../images/logo/logo.png"
-        onmouseover="this.src='../images/logo/headeyetongue.png'" onmouseout="this.src='../images/logo/logo.png'"/>
-      </a>
+    <nav class="regnav">
+      <div>
+        <a id="logo" href="../">
+          <img class="navlogo" src="../images/logo/logo.png"
+          onmouseover="this.src='../images/logo/headeyetongue.png'" onmouseout="this.src='../images/logo/logo.png'"/>
+        </a>
+      </div>
       <div class="pagelinks">
         <a href="../big/">bigger things</a>
         <span>//</span>
-        <a href="#">smaller things</a>
+        <a href="../small/">smaller things</a>
       </div>
-      <div id="links"><a href="../about">about & contact</a></div>
+      <div id="links">
+        <a href="../about/">about</a>
+      </div>
     </nav>
+
+  <!-- hamburger  -->
+    <div class="hamburger">
+      <div>
+        <a id="logo" href="../">
+          <img class="navlogo" src="../images/logo/logo.png"
+          onmouseover="this.src='../images/logo/headeyetongue.png'" onmouseout="this.src='../images/logo/logo.png'"/>
+        </a>
+      </div>
+      <div class="hamburger">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+      <div id="sidebarMenu">
+          <ul class="sidebarMenuInner">
+            <li><a href="../big/" target="_blank">big</a></li>
+            <li><a href="../small/" target="_blank">small</a></li>
+            <li><a href="../about/" target="_blank">about</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  <!-- hamburger -->
 
     <div id="page">
       <div class="pagetop topimage">
@@ -83,8 +114,8 @@
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../jquery-canvas-sparkles.min.js"></script>
-    <script type="text/javascript" src="../cursor.js"></script>
-    <script type="text/javascript" src="../index.js"></script>
+    <script type="text/javascript" src="../js/jquery-canvas-sparkles.min.js"></script>
+    <script type="text/javascript" src="../js/cursor.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
   </body>
 </html>

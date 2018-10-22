@@ -1,0 +1,74 @@
+/*  PRODUCT PAGE START */
+#page {
+  padding: 10px;
+}
+
+.pagetop {
+  display: flex;
+  margin-top: 42px;
+  border-bottom: solid 5px white;
+}
+
+.pagename {
+  width: 100%;
+  font-size: 4.5em;
+  /*background-color: rgba(252, 244, 250, 0.9);*/
+  text-align: center;
+  margin: 30px 0;
+  padding: 15px 0;
+  /*color: rgb(96, 96, 96);*/
+  color: black;
+}
+
+.topimage {
+  /*background-image: url("./images/glitter.jpg");*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 211, 211);
+}
+
+.gallery {
+  display: flex;
+  /*width: 900px;*/
+  margin: 10px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure .name {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  font-size: 1.2em;
+}
+
+figure .price {
+  position: absolute;
+  left: 4px;
+  bottom: 2px;
+  font-size: 1.1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+figure a:hover {
+  font-style: italic;
+  /*font-size: 1.5em;*/
+  transition: all 0.3s ease;
+}
+/*PRODUCT PAGE END*/

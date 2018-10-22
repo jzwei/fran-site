@@ -1,0 +1,150 @@
+/*DETAIL PAGE START */
+/*.detailpagetop {
+  display: flex;
+  margin-top: 30px;
+  border-bottom: solid 5px white;
+}
+
+.detailpagename {
+  width: 100%;
+  font-size: 3.5em;
+  background-color: rgba(252, 244, 250, 0.9);
+  text-align: center;
+  margin: 30px 0;
+  padding: 15px 0;
+  color: rgb(96, 96, 96);
+  color: black;
+}*/
+
+.detailwrapper {
+  display: grid;
+  padding-top: 60px;
+  max-width: 800px;
+  /*height: 600px;*/
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  margin: 0 auto 40px;
+}
+
+.detailpage {
+  display: flex;
+  justify-content: center;
+  /*background-color: red;*/
+}
+
+.detailtext {
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  /*font-family: 'Rubik', sans-serif;*/
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.detailitemname {
+  font-size: 2em;
+}
+.detailtext h3 {
+  margin-bottom: 5px;
+}
+.detailprice {
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.deet {
+  padding: 5px;
+  padding-left: 15px;
+  font-size: 0.9em;
+}
+
+.detailnotes {
+  align-self: flex-end;
+}
+.productnotes {
+  font-size: 0.8em;
+}
+
+.sp-wrap {
+  display: none;
+  line-height: 0;
+  font-size: 0;
+  position: relative;
+  float: left;
+  /*Set max-width to your thumbnail width*/
+  max-width: 800px;
+}
+
+/* Thumbnails */
+.sp-thumbs {
+  text-align: center;
+}
+
+.sp-thumbs a:link,
+.sp-thumbs a:visited {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  opacity: 0.3;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.sp-thumbs a:hover {
+  opacity: 1;
+}
+
+/* Styles for the currently selected thumbnail */
+.sp-thumbs a:active,
+.sp-current {
+  opacity: 1 !important;
+  position: relative;
+}
+
+/* Image currently being viewed */
+.sp-large {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.sp-large a img {
+  max-width: 100%;
+  height: auto;
+}
+.sp-large a {
+  display: block;
+}
+
+/* Panning Zoomed Image */
+.sp-zoom {
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+  display: none;
+}
+
+/* Lightbox disabled*/
+.sp-lightbox {
+  display: none !important;
+}
+
+/* Tweak styles for small viewports */
+@media screen and (max-width: 400px) {
+  .sp-wrap {
+    margin: 0 0 15px 0;
+  }
+}
+/*DETAIL PAGE END*/

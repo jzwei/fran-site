@@ -1,0 +1,66 @@
+/* SMALL STUFF START*/
+@media only screen and (max-width: 600px) {
+  body {
+    /* for debug, to make it obvious it's working */
+    /* color: red; */
+    /* background-color: black; */
+  }
+
+  /*INDEX START*/
+  #indexcontent {
+    padding-top: 0px;
+  }
+  .indexname {
+    padding: 40px;
+    font-size: 2.5em;
+    margin-top: 56px;
+  }
+  /*INDEX END*/
+
+  /*PAGE START*/
+  #page {
+    padding-top: 0px;
+  }
+  .pagetop {
+    margin-top: 56px;
+  }
+  .pagetop {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    min-height: 20vh;
+  }
+  .pagename {
+    font-size: 2em;
+  }
+
+  figure {
+    min-height: 100px;
+    height: auto;
+    margin: 10px;
+    padding: 24px;
+  }
+  /*PAGE END*/
+}
+
+/* @media only screen and (max-width: 200px) {
+  figure {
+    min-height: 100px;
+    height: auto;
+    margin: 5px;
+    padding: 17px;
+  }
+
+  figure .name {
+    font-size: 0.9em;
+  }
+
+  figure .price {
+    font-size: 0.9em;
+  }
+  #page .itemprice {
+    font-size: 3.5vw;
+  }
+  figure a:hover {
+    font-size: 1em;
+  }
+} */
