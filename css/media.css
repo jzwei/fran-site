@@ -19,18 +19,18 @@
 
   /*PAGE START*/
   #page {
-    padding-top: 0px;
+    padding-top: 56px;
+    margin-top: 0px;
   }
   .pagetop {
-    margin-top: 56px;
-  }
-  .pagetop {
-    grid-column-start: 1;
-    grid-column-end: span 2;
+    display: inline-flex;
+    width: 100%;
     min-height: 20vh;
+    /*grid-column-start: 1;
+    grid-column-end: span 2;*/
   }
   .pagename {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   figure {
@@ -40,8 +40,15 @@
     padding: 24px;
   }
   /*PAGE END*/
-}
 
+  /*DETAIL PAGE START*/
+  .detailwrapper {
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  /*DETAIL PAGE END*/
+}
 /* @media only screen and (max-width: 200px) {
   figure {
     min-height: 100px;

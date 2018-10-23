@@ -1,12 +1,24 @@
 /*  PRODUCT PAGE START */
 #page {
   padding: 10px;
+  margin-top: 43px;
+}
+
+.sparklecontainer {
+  /*background-image: url("./images/glitter.jpg");*/
+  background-position: center;
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
+  background-color: rgb(255, 211, 211);
+  display: flex;
+  /*margin-top: 42px;*/
+  border-bottom: solid 5px white;
 }
 
 .pagetop {
   display: flex;
-  margin-top: 42px;
-  border-bottom: solid 5px white;
+  width: 100%;
+  text-align: center;
 }
 
 .pagename {
@@ -20,13 +32,13 @@
   color: black;
 }
 
-.topimage {
-  /*background-image: url("./images/glitter.jpg");*/
-  background-position: center;
+/*.topimage {*/
+/*background-image: url("./images/glitter.jpg");*/
+/*background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(255, 211, 211);
-}
+}*/
 
 .gallery {
   display: flex;

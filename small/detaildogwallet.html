@@ -9,7 +9,7 @@
     <title>Fran Site</title>
   </head>
   <body>
-    <nav>
+    <nav class="regnav">
       <div>
         <a id="logo" href="../">
           <img class="navlogo" src="../images/logo/logo.png"
@@ -22,42 +22,68 @@
         <a href="../small/">smaller things</a>
       </div>
       <div id="links">
-        <a href="../about">about & contact</a>
+        <a href="../about/">about</a>
       </div>
     </nav>
 
-<div id="page">
-    <!-- <div class="detailpagetop topimage">
-      <div class="pagename " href="#">___detail</div>
-    </div> -->
-    <div class="detailwrapper">
-
-      <div class="detailpage">
-        <div class="sp-wrap">
-          <a href="../images/detail/dogwalletdetail.jpg"><img src="../images/detail/dogwalletdetailsm.jpg" alt=""></a>
-          <a href="../images/detail/dogwalletdetail2.jpg"><img src="../images/detail/dogwalletdetail2sm.jpg" alt=""></a>
-          <a href="../images/detail/dogwalletdetail3.jpg"><img src="../images/detail/dogwalletdetail3sm.jpg" alt=""></a>
-        </div>
+    <!-- hamburger  -->
+    <div class="hamburger">
+      <div>
+        <a id="logo" href="../">
+          <img class="navlogo" src="../images/logo/logo.png"
+          onmouseover="this.src='../images/logo/headeyetongue.png'" onmouseout="this.src='../images/logo/logo.png'"/>
+        </a>
       </div>
-      <div class="detailtext">
-        <div class="">
-          <div class="detailitemname">the dog wallet</div>
-          <li class="detailprice">$48</li>
-          <h3>specs:</h3>
-          <li class="deet">handmade, hand painted</li>
-          <li class="deet">vegetable tanned leather</li>
-          <li class="deet">unlined interior</li>
-          <li class="deet">fold closure</li>
-          <h3>measurements:</h3>
-          <li class="deet">length x width x thickness</li>
+      <div class="hamburger">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+      <div id="sidebarMenu">
+          <ul class="sidebarMenuInner">
+            <li><a href="../big/">big</a></li>
+            <li><a href="../small/">small</a></li>
+            <li><a href="../about/">about</a></li>
+          </ul>
         </div>
-        <div class="detailnotes">
-          <h3>product notes:</h3>
-          <p class="productnotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
     </div>
-  </div>
+    <!-- hamburger -->
+
+    <div id="page">
+      <!-- <div class="detailpagetop topimage">
+        <div class="pagename " href="#">___detail</div>
+      </div> -->
+      <div class="detailwrapper">
+        <div class="detailpage">
+          <div class="sp-wrap">
+            <a href="../images/detail/dogwalletdetail.jpg"><img src="../images/detail/dogwalletdetailsm.jpg" alt=""></a>
+            <a href="../images/detail/dogwalletdetail2.jpg"><img src="../images/detail/dogwalletdetail2sm.jpg" alt=""></a>
+            <a href="../images/detail/dogwalletdetail3.jpg"><img src="../images/detail/dogwalletdetail3sm.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="detailtext">
+          <div class="">
+            <div class="detailitemname">the dog wallet</div>
+            <li class="detailprice">$48</li>
+            <h3>specs:</h3>
+            <li class="deet">handmade, hand painted</li>
+            <li class="deet">vegetable tanned leather</li>
+            <li class="deet">unlined interior</li>
+            <li class="deet">fold closure</li>
+            <h3>measurements:</h3>
+            <li class="deet">length x width x thickness</li>
+          </div>
+          <div class="detailnotes">
+            <h3>product notes:</h3>
+            <p class="productnotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footerinfo">

@@ -1,6 +1,6 @@
 /*NAV & FOOTER START*/
-@media only screen and (min-width: 500px) {
-  div.hamburger {
+@media only screen and (min-width: 600px) {
+  .hamburger {
     display: none;
   }
   nav {
@@ -83,7 +83,7 @@ footer .logoimage img {
 }
 
 /****HAMBURGER START****/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   body {
     /*background-color: red !important;*/
   }
@@ -91,8 +91,9 @@ footer .logoimage img {
     display: none;
   }
   .hamburger {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
+    z-index: 1000;
     display: grid;
     width: 100%;
   }
@@ -105,15 +106,13 @@ footer .logoimage img {
     max-height: 32px;
   }
   #sidebarMenu {
-    /*height: 100%;*/
     position: fixed;
     margin-top: 56px;
     right: 0;
     width: 50%;
-    /*margin-top: 45px;*/
     transform: translateX(2000px);
     transition: transform 250ms ease-in-out;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
   }
   .sidebarMenuInner {
     margin: 0;
@@ -131,7 +130,7 @@ footer .logoimage img {
   .sidebarMenuInner li span {
     display: block;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
+    /*color: rgba(255, 255, 255, 0.5);*/
   }
   .sidebarMenuInner li a {
     color: black;
