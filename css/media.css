@@ -1,3 +1,12 @@
+@media only screen and (min-width: 600px) {
+  .detailnamesmall {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
 /* SMALL STUFF START*/
 @media only screen and (max-width: 600px) {
   body {
@@ -46,6 +55,32 @@
     padding-top: 10px;
     grid-template-columns: 1fr;
   }
+  .detailitemname {
+    display: none;
+  }
+  .detailprice {
+    display: none;
+  }
+  .detailnamesmall {
+    background-color: white;
+    list-style: none;
+    font-family: "Quicksand", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px 10px;
+  }
+  .specssm {
+    margin-top: 5px;
+  }
+  .detailitemnamesm {
+    font-size: 2em;
+  }
+  .detailpricesm {
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+
   /*DETAIL PAGE END******/
 
   /*ABOUT START**********************/

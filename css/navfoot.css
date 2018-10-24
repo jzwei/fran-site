@@ -1,51 +1,46 @@
 /*NAV & FOOTER START*/
-@media only screen and (min-width: 600px) {
-  .hamburger {
-    display: none;
-  }
-  nav {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr 0.3fr;
-    background-color: white;
-    font-size: 1.5em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.8);
-    align-items: center;
-  }
+nav {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  background-color: white;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: center;
+}
 
-  nav #links {
-    /* Flexbox would be another way to do this */
-    text-align: right;
-  }
+nav #links {
+  /* Flexbox would be another way to do this */
+  text-align: right;
+}
 
-  .navlogo {
-    max-height: 32px;
-  }
+.navlogo {
+  max-height: 32px;
+}
 
-  nav a#logo {
-    margin: 0;
-    display: flex;
-  }
+nav a#logo {
+  margin: 0;
+  display: flex;
+}
 
-  nav .pagelinks {
-    /* need to make these only one line mobile */
-    text-align: center;
-  }
+nav .pagelinks {
+  /* need to make these only one line mobile */
+  text-align: center;
+}
 
-  nav a {
-    color: rgb(20, 20, 20);
-    text-decoration: none;
-    margin: 0px 10px;
-    transition: 0.3s ease all;
-  }
+nav a {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  margin: 0px 10px;
+  transition: 0.3s ease all;
+}
 
-  nav a:hover {
-    color: rgb(180, 50, 180);
-  }
+nav a:hover {
+  color: rgb(180, 50, 180);
 }
 
 footer {
