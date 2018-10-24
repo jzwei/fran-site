@@ -1,22 +1,45 @@
 /*ABOUT PAGE START*/
 .about {
+}
+
+.aboutblurb {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.1fr 1fr;
+  /*max-width: 90%;*/
+  text-align: center;
+  /*margin: 0 auto;*/
+  padding: 40px;
+}
+.bio {
+  font-size: 1.3em;
+  font-family: "Quicksand", sans-serif;
+  margin: 10px;
 }
 .about-img {
   max-width: 200px;
+  margin: 10px;
 }
 .contact-wrapper {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr .5fr;
+}
+.contact {
   grid-column-start: 2;
   grid-column-end: 4;
-  padding: 10px;
+  padding: 20px;
+  border: solid 5px white;
+  margin: 10px;
 }
 .contact-top {
+  text-align: center;
 }
 .contact-img {
   max-width: 150px;
+  margin-bottom: 10px;
 }
 .contact-text {
+  font-size: 3em;
+  padding: 10px;
 }
 .input {
   width: 100%;

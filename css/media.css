@@ -6,7 +6,7 @@
     /* background-color: black; */
   }
 
-  /*INDEX START*/
+  /*INDEX START***********************/
   #indexcontent {
     padding-top: 0px;
   }
@@ -15,9 +15,9 @@
     font-size: 2.5em;
     margin-top: 56px;
   }
-  /*INDEX END*/
+  /*INDEX END************/
 
-  /*PAGE START*/
+  /*PAGE START***********************/
   #page {
     padding-top: 56px;
     margin-top: 0px;
@@ -39,16 +39,39 @@
     margin: 10px;
     padding: 24px;
   }
-  /*PAGE END*/
+  /*PAGE END***********/
 
-  /*DETAIL PAGE START*/
+  /*DETAIL PAGE START*****************/
   .detailwrapper {
     padding-top: 10px;
     grid-template-columns: 1fr;
   }
+  /*DETAIL PAGE END******/
 
-  /*DETAIL PAGE END*/
+  /*ABOUT START**********************/
+.aboutblurb {
+      display: block;
 }
+  .bio {
+    font-size: 1em;
+  }
+  .about-img {
+    float: left;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+  }
+  .contact {
+    grid-column-end: 2;
+  }
+  /*ABOUT END**********/
+
+  /*FOOTER START**********************/
+
+  /*FOOTER END*********/
+}
+
 /* @media only screen and (max-width: 200px) {
   figure {
     min-height: 100px;
