@@ -49,14 +49,15 @@
   /*DETAIL PAGE END******/
 
   /*ABOUT START**********************/
-.aboutblurb {
-      display: block;
-}
+  .aboutblurb {
+    display: block;
+  }
   .bio {
     font-size: 1em;
   }
   .about-img {
     float: left;
+    max-width: 150px;
   }
 
   .contact-wrapper {
