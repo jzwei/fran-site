@@ -47,6 +47,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 50vh;
 }
 
 figure {
