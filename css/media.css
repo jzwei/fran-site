@@ -94,7 +94,7 @@
 
   /*ABOUT START**********************/
   .about-img {
-    max-width: 200px;
+    /*max-width: 200px;*/
   }
   .contact-wrapper {
     grid-template-columns: 0.1fr 1fr 0.1fr;
