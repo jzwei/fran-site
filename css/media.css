@@ -7,6 +7,15 @@
   }
 }
 
+/*@media only screen and (max-width: 1025px) {
+  .aboutblurb {
+    display: block;
+  }
+  .about-img {
+    float: left;
+  }
+}*/
+
 /* SMALL STUFF START*/
 @media only screen and (max-width: 600px) {
   body {
@@ -84,17 +93,9 @@
   /*DETAIL PAGE END******/
 
   /*ABOUT START**********************/
-  .aboutblurb {
-    display: block;
-  }
-  .bio {
-    font-size: 1em;
-  }
   .about-img {
-    float: left;
-    max-width: 150px;
+    max-width: 200px;
   }
-
   .contact-wrapper {
     grid-template-columns: 0.1fr 1fr 0.1fr;
   }

@@ -3,25 +3,24 @@
 }
 
 .aboutblurb {
-  display: grid;
   grid-template-columns: 0.1fr 1fr;
-  /*max-width: 90%;*/
-  /*text-align: center;*/
-  /*margin: 0 auto;*/
   padding: 40px;
+  display: inline-block;
 }
 .bio {
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: "Quicksand", sans-serif;
-  margin: 10px;
+  margin: 0 10px;
 }
 .hello {
-  font-size: 2em;
+  font-size: 3em;
   font-style: bold;
+  line-height: 1;
 }
 .about-img {
-  max-width: 250px;
-  margin: 10px;
+  max-width: 300px;
+  margin: 18px 15px 0 10px;
+  float: left;
 }
 .contact-wrapper {
   display: grid;
@@ -62,10 +61,17 @@
   grid-column-end: 2;
   justify-self: end;
 }
-
 .form-entry {
   padding-bottom: 10px;
   font-size: 1.5em;
 }
-
+.send {
+  text-align: right;
+}
+.sendbtn {
+  font-family: "script-font";
+  background-color: rgb(255, 240, 170);
+  font-size: 1.2em;
+  cursor: pointer;
+}
 /*ABOUT PAGE END*/

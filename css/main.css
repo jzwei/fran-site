@@ -8,7 +8,7 @@ body,
 html {
   margin: 0px;
   padding: 0px;
-  font-family: script-font;
+  font-family: "script-font";
   background-color: rgb(252, 244, 250);
 }
 
