@@ -5,7 +5,10 @@
 .aboutblurb {
   grid-template-columns: 0.1fr 1fr;
   padding: 40px;
-  display: inline-block;
+  /* display: inline-block; */
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
 }
 .bio {
   font-size: 1em;
@@ -19,8 +22,14 @@
 }
 .about-img {
   max-width: 300px;
-  margin: 18px 15px 0 10px;
+  margin: 4px 15px 0 10px;
   float: left;
+}
+.fran-img {
+  float: right;
+  max-width: 200px;
+  padding-top: 5px;
+  padding: 9px 7px 0 9px;
 }
 .contact-wrapper {
   display: grid;
