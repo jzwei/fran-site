@@ -52,18 +52,19 @@ footer {
   padding: 15px 70px 30px 70px;
   background-color: rgb(255, 211, 211);
   border-top: solid 5px white;
-  /*position: fixed;
-  bottom: 0;
-  width: 100%;*/
-  position: relative;
+  /* position: fixed; */
+  /* bottom: 0;
+  width: 100%;
+  position: absolute; */
 }
 
 footer .footertopic {
-  font-size: 2em;
+  font-size: 1.2em;
   /*text-decoration: underline;*/
   color: white;
   border-bottom: solid 1px white;
   width: 80%;
+  font-family: "Quicksand", sans-serif;
 }
 
 footer .footerinfo a {

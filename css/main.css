@@ -17,6 +17,22 @@ html {
 * {
   box-sizing: border-box;
 }
+/* unvisited link */
+a:link {
+  color: black;
+}
+/* visited link */
+a:visited {
+  color: black;
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+/* selected link */
+a:active {
+  color: hotpink;
+}
 
 .cursor {
   /*cursor: url(https://www.rw-designer.com/cursor-extern.php?id=115007), auto;*/
@@ -50,6 +66,18 @@ html {
   left: 25px;
   top: 176px;*/
   transform: rotate(-20deg);
+}
+
+a.pagelink {
+  background-color: rgb(255, 211, 211);
+  color: white;
+  padding: 5px 20px;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+a.pagelink:hover {
+  font-style: italic;
 }
 
 #indexcontent a.item {
