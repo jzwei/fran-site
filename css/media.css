@@ -97,7 +97,10 @@
 
   /*ABOUT START**********************/
   .about-img {
-    /*max-width: 200px;*/
+    max-width: 255px;
+  }
+  .fran-img {
+    max-width: 150px;
   }
   .contact-wrapper {
     grid-template-columns: 0.1fr 1fr 0.1fr;
