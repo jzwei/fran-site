@@ -57,7 +57,8 @@ a:active {
   grid-column-end: 3;
   background-color: rgb(255, 211, 211);
   border-bottom: solid 5px white;
-  color: white;
+  /* color: white; */
+  color: black;
   /*display: flex;*/
 }
 .indexlogo {
@@ -70,7 +71,8 @@ a:active {
 
 a.pagelink {
   background-color: rgb(255, 211, 211);
-  color: white;
+  /* color: white; */
+  color: black;
   padding: 5px 20px;
   font-size: 2.5em;
   text-align: center;
@@ -86,7 +88,8 @@ a.pagelink:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  /* color: white; */
+  color: black;
   text-decoration: none;
   padding: 20px;
   font-size: 2.5em;

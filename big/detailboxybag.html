@@ -55,47 +55,39 @@
   <!-- hamburger -->
 
     <div id="page">
-      <div class="sparklecontainer">
-        <div class="pagetop topimage">
-          <div class="pagename " href="#">smaller things</div>
+      <div class="detailwrapper">
+        <div class="detailnamesmall">
+          <div class="detailitemnamesm">the boxy bag</div>
+          <li class="detailpricesm">$158</li>
         </div>
-      </div>
-      <div class="gallery">
-        <figure>
-          <a href="detailjewelrytravel.html">
-            <img src="../images/jewelry3.jpg">
-            <figcaption class="name">jewelry travel case</figcaption>
-          </a>
-          <figcaption class="price">$98</figcaption>
-        </figure>
-        <figure>
-          <a href="detailcardholder.html">
-            <img src="../images/wallet2.jpg">
-            <figcaption class="name">card holder</figcaption>
-          </a>
-          <figcaption class="price">$68</figcaption>
-        </figure>
-        <figure>
-          <a href="detailhandswallet.html">
-            <img src="../images/handwallet2.jpg">
-            <figcaption class="name">hands wallet</figcaption>
-          </a>
-          <figcaption class="price">$118</figcaption>
-        </figure>
-        <figure>
-          <a href="detaildogwallet.html">
-            <img src="../images/dogwallet.jpg">
-            <figcaption class="name">dog wallet</figcaption>
-          </a>
-            <figcaption class="price">$58</figcaption>
-        </figure>
-        <figure>
-          <a href="detailleash.html">
-            <img src="../images/leash2.jpg">
-            <figcaption class="name">braided pup-leash</figcaption>
-          </a>
-            <figcaption class="price">$58</figcaption>
-        </figure>
+        <div class="detailpage">
+          <div class="sp-wrap">
+            <a href="../images/detail/boxybagdetail.jpg"><img src="../images/detail/boxybagdetailsm.jpg" alt=""></a>
+            <a href="../images/detail/boxybagdetail2.jpg"><img src="../images/detail/boxybagdetail2sm.jpg" alt=""></a>
+            <a href="../images/detail/boxybagdetail3.jpg"><img src="../images/detail/boxybagdetail3sm.jpg" alt=""></a>
+            <a href="../images/detail/boxybagdetail4.jpg"><img src="../images/detail/boxybagdetail4sm.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="detailtext">
+          <div class="">
+            <div class="detailitemname">the boxy bag</div>
+            <li class="detailprice">$158</li>
+            <h3 class="specssm">specs:</h3>
+            <li class="deet">handmade</li>
+            <li class="deet">vegetable tanned leather</li>
+            <li class="deet">9" YKK zipper closure</li>
+            <li class="deet">unlined interior</li>
+            <li class="deet">antique brass hardware</li>
+            <li class="deet">adjustable cross-body strap</li>
+            <h3>measurements:</h3>
+            <li class="deet">6.25" width x 6.25" height x 2.25" depth</li>
+            <li class="deet">max 22" strap drop</li>
+          </div>
+          <div class="detailnotes">
+            <h3>product notes:</h3>
+            <p class="productnotes">This item is hand crafted using vegetable tanned leather. Natural variations in the leather lend each piece its own distinct characteristics. With use and exposure to the environment, the color of this item will develop a deeper quality and a unique patina.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -114,14 +106,22 @@
         </a>
       </div>
       <div class="logoimage">
-        <img class="logo cursor" src="../images/logo/bluedogstanding.png"
-        onmouseover="this.src='../images/logo/bluedogstandingwag.gif'" onmouseout="this.src='../images/logo/bluedogstanding.png'"/>
+        <img class="logo cursor" src="../images/logo/limedogpeeing.png"
+        onmouseover="this.src='../images/logo/limedogpeeingwagandleg.gif'" onmouseout="this.src='../images/logo/limedogpeeing.png'"/>
       </div>
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery-canvas-sparkles.min.js"></script>
-    <script type="text/javascript" src="../js/cursor.js"></script>
+    <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../js/smoothproducts.min.js"></script>
+    <script type="text/javascript">
+    /* wait for ../images to load */
+    $(window).load(function() {
+      $('.sp-wrap').smoothproducts();
+    });
+    </script>
     <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/cursor.js"></script>
   </body>
 </html>

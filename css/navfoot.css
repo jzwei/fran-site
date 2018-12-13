@@ -61,8 +61,10 @@ footer {
 footer .footertopic {
   font-size: 1.2em;
   /*text-decoration: underline;*/
-  color: white;
-  border-bottom: solid 1px white;
+  /* color: white; */
+  color: black;
+  /* border-bottom: solid 1px white; */
+  border-bottom: solid 1px black;
   width: 80%;
   font-family: "Quicksand", sans-serif;
 }
@@ -71,7 +73,8 @@ footer .footerinfo a {
   display: block;
   text-decoration: none;
   font-size: 1em;
-  color: white;
+  /* color: white; */
+  color: black;
   font-family: "Quicksand", sans-serif;
 }
 footer .footerinfo a:hover {
