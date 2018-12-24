@@ -83,4 +83,34 @@ figure a:hover {
   /*font-size: 1.5em;*/
   transition: all 0.3s ease;
 }
+
+/* hacky css for corner based on https://stackoverflow.com/a/48997090/83859 */
+figure span.soldout_ribbon {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 100px solid black;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid transparent;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+figure span.soldout_ribbon span {
+  position: absolute;
+  /* padding: 5px; */
+  /* top: -24px; */
+  top: -85px;
+  left: 10px;
+  /* left: -24px; */
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: monospace;
+  transform: rotate(-45deg);
+  display: block;
+}
+
 /*PRODUCT PAGE END*/
