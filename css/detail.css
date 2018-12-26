@@ -36,6 +36,11 @@
   padding: 10px;
   font-size: 1.2em;
 }
+
+.sold_out_deet {
+  color: red;
+}
+
 .deet {
   padding: 5px;
   padding-left: 15px;
