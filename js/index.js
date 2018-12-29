@@ -1,14 +1,20 @@
-$(".item").sparkle({
-  direction: "down"
-});
+let items = $(".item");
+if (items.length) {
+  items.sparkle({
+    direction: "down"
+  });
+}
 
-$(".topimage").sparkle({
-  direction: "down",
-  minSize: 20,
-  // maxSize: 20,
-  color: "white",
-  count: 50
-});
+let topimage = $(".topimage");
+if (topimage.length) {
+  topimage.sparkle({
+    direction: "down",
+    minSize: 20,
+    // maxSize: 20,
+    color: "white",
+    count: 50
+  });
+}
 
 // cancel the default events
 $(".topimage")
@@ -23,13 +29,15 @@ function stop_sparkle() {
 
 setTimeout(stop_sparkle, 3500);
 
-$("figure img").sparkle({
-  direction: "down",
-  minSize: 10,
-  maxSize: 15,
-  color: "white",
-  count: 25
-});
+if ($("figure img").length) {
+  $("figure img").sparkle({
+    direction: "down",
+    minSize: 10,
+    maxSize: 15,
+    color: "white",
+    count: 25
+  });
+}
 
 // $("a").on("touchstart", function(event) {
 

@@ -76,11 +76,16 @@
           <p class="bio">Fran is my muse.</p>
         </div> -->
         <!-- CONTACT FORM BELOW-->
-        <div id="contact orders" class="contact-wrapper">
+        <div id="contact" class="contact-wrapper">
     			<div class="contact">
     				<form class="gform" role="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdNGErZBgAwFkBMGX0XYZ2D1WetJioPKHI-BZU_xxIXuFWyIg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-    					<div class="contact-top">
+              <div class="contact-top">
                 <div class="contact-text">Contact me!</div>
+                <div id="orders">Online ordering coming soon. Message or email for inquiries.</div>
+                <div class="contact-email">
+                  <a href="mailto:hello@little-bones.com">hello@littlebones.com</a></div>
+                <div class="contact-instagram">
+                  <a href="https://www.instagram.com/littlebones_co/?hl=en"><i class="fa fa-instagram" style="font-size:30px"></i> @littlebones_co</a></div>
                 <img class="contact-img cursor" src="../images/logo/yellowdogsleeping.png"
                 onmouseover="this.src='../images/logo/yellowdogsleepingwag.gif'" onmouseout="this.src='../images/logo/yellowdogsleeping.png'"/>
               </div>
@@ -115,10 +120,10 @@
   								<input id="submit" name="submit" type="submit" value="Send!" class="sendbtn">
   							</div>
   						</div>
+              <script type="text/javascript">var submitted=false;</script>
   						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
   						<div class="">
                 <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
-    						<script type="text/javascript">var submitted=false;</script>
     						<script type="text/javascript">
     						$('#gform').on('submit', function(e) {
     						  $('#gform *').fadeOut(2000);
