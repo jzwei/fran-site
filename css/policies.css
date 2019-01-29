@@ -1,0 +1,20 @@
+/*POLICIES PAGE START*/
+.policies {
+  font-family: "Quicksand", sans-serif;
+}
+
+.policiesblurb {
+  grid-template-columns: 0.1fr 1fr;
+  padding: 40px;
+  /* display: inline-block; */
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sectionheader {
+  font-size: 1.2em;
+  line-height: 0.5;
+  font-weight: bold;
+  text-decoration: underline;
+}
