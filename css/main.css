@@ -99,3 +99,18 @@ a.pagelink:hover {
   font-size: 3em;
 }
 /*INDEX PAGE END*/
+
+/* 404 styles start*/
+#notfound {
+  padding-top: 55px;
+  padding-bottom: 500px;
+  text-align: center;
+}
+.notfoundtext {
+  font-size: 2em;
+  font-family: "Quicksand", sans-serif;
+}
+.notfoundimg {
+  max-width: 300px;
+}
+/* 404 styles end */
