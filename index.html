@@ -74,6 +74,272 @@
       </a>
     </div>
 
+    <!-- BUY BUTTON START -->
+      <div id='product-component-10ac280ec45'></div>
+            <script type="text/javascript">
+            /*<![CDATA[*/
+
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'little-bones-leather.myshopify.com',
+                  storefrontAccessToken: 'f031ad8722950ad2e09a9b1771f9a0f5',
+                });
+
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: [2689857093713],
+                    node: document.getElementById('product-component-10ac280ec45'),
+                    moneyFormat: '%24%7B%7Bamount%7D%7D',
+                    options: {
+          "product": {
+            "variantId": "all",
+            "width": "240px",
+            "contents": {
+              "img": false,
+              "imgWithCarousel": false,
+              "title": false,
+              "variantTitle": false,
+              "price": false,
+              "description": false,
+              "buttonWithQuantity": false,
+              "quantity": false
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0",
+                  "margin-bottom": "50px"
+                }
+              },
+              "button": {
+                "background-color": "#f9668f",
+                "font-family": "Open Sans, sans-serif",
+                "font-size": "15px",
+                "padding-top": "15.5px",
+                "padding-bottom": "15.5px",
+                ":hover": {
+                  "background-color": "#e05c81"
+                },
+                ":focus": {
+                  "background-color": "#e05c81"
+                },
+                "font-weight": "bold"
+              },
+              "title": {
+                "font-size": "26px"
+              },
+              "price": {
+                "font-size": "18px"
+              },
+              "quantityInput": {
+                "font-size": "15px",
+                "padding-top": "15.5px",
+                "padding-bottom": "15.5px"
+              },
+              "compareAt": {
+                "font-size": "15px"
+              }
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          },
+          "cart": {
+            "contents": {
+              "button": true
+            },
+            "styles": {
+              "cart": {
+                "background-color": "#fcf4fa"
+              },
+              "button": {
+                "background-color": "#f9668f",
+                "font-family": "Open Sans, sans-serif",
+                "font-size": "15px",
+                "padding-top": "15.5px",
+                "padding-bottom": "15.5px",
+                ":hover": {
+                  "background-color": "#e05c81"
+                },
+                ":focus": {
+                  "background-color": "#e05c81"
+                },
+                "font-weight": "bold"
+              },
+              "title": {
+                "color": "#292929"
+              },
+              "footer": {
+                "background-color": "#fcf4fa"
+              },
+              "header": {
+                "color": "#292929"
+              },
+              "lineItems": {
+                "color": "#292929"
+              },
+              "subtotalText": {
+                "color": "#292929"
+              },
+              "subtotal": {
+                "color": "#292929"
+              },
+              "notice": {
+                "color": "#292929"
+              },
+              "currency": {
+                "color": "#292929"
+              },
+              "close": {
+                ":hover": {
+                  "color": "#292929"
+                },
+                "color": "#292929"
+              },
+              "emptyCart": {
+                "color": "#292929"
+              }
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          },
+          "modalProduct": {
+            "contents": {
+              "img": false,
+              "imgWithCarousel": true,
+              "variantTitle": false,
+              "buttonWithQuantity": true,
+              "button": false,
+              "quantity": false
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+              "button": {
+                "background-color": "#f9668f",
+                "font-family": "Open Sans, sans-serif",
+                "font-size": "15px",
+                "padding-top": "15.5px",
+                "padding-bottom": "15.5px",
+                ":hover": {
+                  "background-color": "#e05c81"
+                },
+                ":focus": {
+                  "background-color": "#e05c81"
+                },
+                "font-weight": "bold"
+              },
+              "quantityInput": {
+                "font-size": "15px",
+                "padding-top": "15.5px",
+                "padding-bottom": "15.5px"
+              }
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          },
+          "toggle": {
+            "styles": {
+              "toggle": {
+                "font-family": "Open Sans, sans-serif",
+                "background-color": "#f9668f",
+                ":hover": {
+                  "background-color": "#e05c81"
+                },
+                ":focus": {
+                  "background-color": "#e05c81"
+                },
+                "font-weight": "bold"
+              },
+              "count": {
+                "font-size": "15px",
+                "color": "#ffffff",
+                ":hover": {
+                  "color": "#ffffff"
+                }
+              },
+              "iconPath": {
+                "fill": "#ffffff"
+              }
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          },
+          "productSet": {
+            "styles": {
+              "products": {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          },
+          "lineItem": {
+            "styles": {
+              "variantTitle": {
+                "color": "#292929"
+              },
+              "title": {
+                "color": "#292929"
+              },
+              "price": {
+                "color": "#292929"
+              },
+              "quantity": {
+                "color": "#292929"
+              },
+              "quantityIncrement": {
+                "color": "#292929",
+                "border-color": "#292929"
+              },
+              "quantityDecrement": {
+                "color": "#292929",
+                "border-color": "#292929"
+              },
+              "quantityInput": {
+                "color": "#292929",
+                "border-color": "#292929"
+              }
+            }
+          }
+        }
+                  });
+                });
+              }
+            })();
+            /*]]>*/
+            </script>
+    <!-- BUY BUTTON END -->
+
     <footer class="footer">
       <div class="footerinfo">
         <div class="footertopic">info</div>
