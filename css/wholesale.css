@@ -1,0 +1,31 @@
+/*WHOLESALE PAGES START*/
+
+.orderform {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-evenly;
+  margin: 5%;
+}
+.wholesaleintro {
+  margin-bottom: 40px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.wholesalesectiontitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  margin-bottom: 0;
+  color: #f95b8f;
+}
+
+hr.line-break {
+  border: 0;
+  height: 1px;
+  margin-bottom: 20px;
+  /* background-image: -webkit-linear-gradient(left, #f95b8f, #f3d1ef, #f95b8f); */
+  background-image: -webkit-linear-gradient(left, #f3d1ef, #f95b8f, #f3d1ef);
+}
+
+.termsblurb {
+  margin-left: 15px;
+}
