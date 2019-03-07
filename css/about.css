@@ -24,12 +24,14 @@
   max-width: 300px;
   margin: 4px 15px 0 10px;
   float: left;
+  border-radius: 5%;
 }
 .fran-img {
   float: right;
   max-width: 200px;
   padding-top: 5px;
   padding: 9px 7px 0 9px;
+  border-radius: 50%;
 }
 .contact-wrapper {
   display: grid;

@@ -58,10 +58,15 @@ figure {
   box-sizing: border-box;
   background-color: #fff;
   position: relative;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
 }
 
 figure img {
   width: 100%;
+  border-top: solid 3px #fbf5fa;
+  border-left: solid 3px #fbf5fa;
+  border-bottom: solid 3px #f7ecf5;
+  border-right: solid 3px #f7ecf5;
 }
 
 figure .name {
