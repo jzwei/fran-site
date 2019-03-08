@@ -4,11 +4,16 @@
 
 .aboutblurb {
   grid-template-columns: 0.1fr 1fr;
-  padding: 40px;
-  /* display: inline-block; */
+  padding: 23px;
   max-width: 800px;
   display: block;
   margin: 0 auto;
+  background-color: white;
+  margin-top: 25px;
+  padding-bottom: 56px;
+  border-radius: 1%;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+  margin-bottom: 20px;
 }
 .bio {
   font-size: 1em;
@@ -43,6 +48,9 @@
   padding: 20px;
   border: solid 5px white;
   margin: 10px;
+  background-color: white;
+  border-radius: 1%;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
 }
 .contact-top {
   text-align: center;
@@ -102,7 +110,7 @@
 }
 .sendbtn {
   font-family: "script-font";
-  background-color: #fffffffa;
+  background-color: #f3dea5;
   font-size: 1.2em;
   cursor: pointer;
 }
