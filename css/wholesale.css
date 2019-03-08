@@ -19,14 +19,6 @@
   color: #f95b8f;
 }
 
-hr.line-break {
-  border: 0;
-  height: 1px;
-  margin-bottom: 20px;
-  /* background-image: -webkit-linear-gradient(left, #f95b8f, #f3d1ef, #f95b8f); */
-  background-image: -webkit-linear-gradient(left, #f3d1ef, #f95b8f, #f3d1ef);
-}
-
 .termsblurb {
   margin-left: 15px;
 }

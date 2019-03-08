@@ -113,5 +113,11 @@
   background-color: #f3dea5;
   font-size: 1.2em;
   cursor: pointer;
+  filter: drop-shadow(0.2rem 0.2rem 0.1rem lightgrey);
+}
+
+.sendbtn:hover {
+  font-style: italic;
+  filter: drop-shadow(0.1rem 0.1rem 0.05rem lightgrey);
 }
 /*ABOUT PAGE END*/

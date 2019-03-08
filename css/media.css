@@ -108,6 +108,9 @@
   .contact {
     grid-column-end: 2;
   }
+  .aboutblurb {
+    max-width: 85%;
+  }
   /*ABOUT END**********/
 
   /*FOOTER START**********************/

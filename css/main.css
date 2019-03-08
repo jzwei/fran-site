@@ -120,3 +120,10 @@ a.pagelink:hover {
   max-width: 300px;
 }
 /* 404 styles end */
+
+hr.line-break {
+  border: 0;
+  height: 1px;
+  margin-bottom: 20px;
+  background-image: -webkit-linear-gradient(left, #f9e3f6, #f3d1ef, #f9e3f6);
+}
