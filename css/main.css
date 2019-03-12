@@ -98,6 +98,11 @@ a.pagelink:hover {
 #indexcontent a.item:hover {
   font-size: 3em;
 }
+
+.pins {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 /*INDEX PAGE END*/
 
 /* HIDDEN BUY BUTTON START */
