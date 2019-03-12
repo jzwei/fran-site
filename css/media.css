@@ -121,6 +121,10 @@
     display: none;
     border-bottom: none;
   }
+  .social {
+    border-left: solid 0.5px black;
+    padding-left: 10px;
+  }
   /*FOOTER END*********/
 }
 
