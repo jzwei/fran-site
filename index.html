@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -9,6 +9,13 @@
       gtag('js', new Date());
       gtag('config', 'UA-82821236-2');
     </script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./css/site.css">
@@ -18,51 +25,7 @@
     <title>Little Bones Leather</title>
   </head>
   <body>
-
-    <nav class="regnav">
-      <div>
-        <a id="logo" href="./">
-          <img class="navlogo" src="./images/logo/logo.png"
-          onmouseover="this.src='./images/logo/headeyetongue.png'" onmouseout="this.src='./images/logo/logo.png'"/>
-        </a>
-      </div>
-      <div class="pagelinks">
-        <a href="./big/">bigger things</a>
-        <span>//</span>
-        <a href="./small/">smaller things</a>
-      </div>
-      <div id="links">
-        <a href="./about">about</a>
-      </div>
-    </nav>
-
-    <!-- hamburger  -->
-    <div class="hamburger">
-      <div>
-        <a id="logo" href="./">
-          <img class="navlogo" src="./images/logo/logo.png"
-          onmouseover="this.src='./images/logo/headeyetongue.png'" onmouseout="this.src='./images/logo/logo.png'"/>
-        </a>
-      </div>
-      <div class="hamburger">
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
-          <div class="spinner diagonal part-1"></div>
-          <div class="spinner horizontal"></div>
-          <div class="spinner diagonal part-2"></div>
-        </label>
-      <div id="sidebarMenu">
-          <ul class="sidebarMenuInner">
-            <li><a href="./big/">big</a></li>
-            <li><a href="./small/">small</a></li>
-            <li><a href="./about/">about</a></li>
-          </ul>
-        </div>
-        </div>
-      </div>
-    </div>
-    <!-- hamburger -->
-
+    <div id="header"></div>
     <div id="indexcontent">
       <div class="indexname">little bones leather
       </div>
@@ -339,27 +302,8 @@
             /*]]>*/
             </script>
     <!-- BUY BUTTON END -->
-
-    <footer class="footer">
-      <div class="footerinfo">
-        <div class="footertopic">info</div>
-          <a href="../about">about & contact</a>
-          <a href="../about/policies">store policies</a>
-          <a href="../about/wholesale">wholesale</a>
-        </div>
-      <div class="footerinfo">
-        <div class="footertopic">ice cream social</div>
-        <a href="https://tinyletter.com/Little_Bones">newsletter</a>
-        <a href="https://www.instagram.com/littlebones_co/?hl=en">
-          <i class="fa fa-instagram" style="font-size:30px"></i>
-        </a>
-      </div>
-      <div class="logoimage">
-        <img class="logo cursor" src="./images/logo/pinkdogpawup.png"
-        onmouseover="this.src='./images/logo/pinkdogpawupwag.gif'" onmouseout="this.src='./images/logo/pinkdogpawup.png'"/>
-      </div>
-    </footer>
-
+    
+    <div id="footer"></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery-canvas-sparkles.min.js"></script>
     <script type="text/javascript" src="./js/cursor.js"></script>
