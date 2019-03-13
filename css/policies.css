@@ -7,9 +7,14 @@
   grid-template-columns: 0.1fr 1fr;
   padding: 40px;
   /* display: inline-block; */
-  max-width: 800px;
+  max-width: 650px;
   display: block;
   margin: 0 auto;
+  background: white;
+  border-radius: 1%;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .sectionheader {

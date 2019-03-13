@@ -113,6 +113,11 @@
   }
   /*ABOUT END**********/
 
+  /*POLICIES START **********/
+  .policiesblurb {
+    max-width: 95%;
+  }
+
   /*FOOTER START**********************/
   .footer {
     padding: 15px 25px 30px 25px;
