@@ -23,6 +23,8 @@
   font-family: "Quicksand", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+  border-radius: 1%;
 }
 
 .detailitemname {
@@ -85,6 +87,7 @@
   transition: all 0.2s ease-out;
   margin-top: 5px;
   margin-left: 5px;
+  border-radius: 4%;
 }
 .sp-thumbs a:hover {
   opacity: 1;
@@ -103,6 +106,8 @@
   overflow: hidden;
   top: 0;
   left: 0;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+  border-radius: 1%;
 }
 .sp-large a img {
   max-width: 100%;

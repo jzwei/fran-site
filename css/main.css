@@ -40,6 +40,13 @@ a:active {
   -webkit-user-drag: none;
 }
 
+.shadow {
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+}
+.round-corner {
+  border-radius: 1%;
+}
+
 /*INDEX PAGE START*/
 #indexcontent {
   padding: 10px;
