@@ -10,17 +10,3 @@
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
-.deet {
-  padding: 5px;
-  padding-left: 15px;
-  font-size: 0.9em;
-  color: red;
-}
-
-.detailnotes {
-  align-self: flex-end;
-}
-.productnotes {
-  font-size: 0.8em;
-}
