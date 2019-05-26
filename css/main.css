@@ -48,7 +48,7 @@ a:active {
 }
 
 /*INDEX PAGE START*/
-#indexcontent {
+.bags {
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -63,7 +63,7 @@ a:active {
   grid-column-start: 1;
   grid-column-end: 3;
   background-color: rgb(255, 211, 211);
-  border-bottom: solid 5px white;
+  /* border-bottom: solid 5px white; */
   /* color: white; */
   color: black;
   /*display: flex;*/
@@ -107,8 +107,14 @@ a.pagelink:hover {
 }
 
 .pins {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+}
+.pinstitle {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 /*INDEX PAGE END*/
 
