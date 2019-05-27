@@ -44,10 +44,11 @@
   grid-template-columns: 1fr 1fr;
   padding: 10px;
   grid-gap: 10px;
+  max-width: 100%;
 }
 
 .about-event-img {
-  max-width: 300px;
+  max-width: 100%;
   margin: 4px 15px 0 10px;
   justify-self: center;
   border-radius: 1%;

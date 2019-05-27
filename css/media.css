@@ -111,6 +111,9 @@
   .aboutblurb {
     max-width: 85%;
   }
+  .about-event-img {
+    /* max-width: 160px; */
+  }
   /*ABOUT END**********/
 
   /*EVENTS START ********************/
