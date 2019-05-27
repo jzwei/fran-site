@@ -1,0 +1,42 @@
+/*EVENT PAGE START*/
+#event {
+  font-family: "Quicksand", sans-serif;
+}
+.event {
+  /* grid-template-columns: 0.1fr 1fr; */
+  padding: 23px;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 1%;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+  margin-bottom: 20px;
+}
+
+.event-name {
+  font-size: 3em;
+  margin: 0;
+}
+.event-date {
+  font-size: 2em;
+  color: #e05c81;
+  margin: 0 0 10px 0;
+}
+.event-detail-container {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  padding-left: 40px;
+  margin: 0 auto;
+}
+.event-img {
+  max-width: 150px;
+  justify-self: left;
+  /* margin: 0; */
+}
+
+.event-details {
+  /* width: 100%; */
+}

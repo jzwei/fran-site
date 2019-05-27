@@ -113,7 +113,25 @@
   }
   /*ABOUT END**********/
 
-  /*POLICIES START **********/
+  /*EVENTS START ********************/
+  .event-name {
+    font-size: 1.5em;
+  }
+  .event-date {
+    font-size: 1.1em;
+  }
+  .event-detail-container {
+    padding-left: 0px;
+  }
+  .event-img {
+    max-width: 100px;
+  }
+  .event-details {
+    font-size: 0.75em;
+  }
+  /*EVENTS END **/
+
+  /*POLICIES START ********************/
   .policiesblurb {
     max-width: 95%;
   }

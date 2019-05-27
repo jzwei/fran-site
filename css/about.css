@@ -2,7 +2,7 @@
 .about {
 }
 
-.aboutblurb {
+.blurb {
   grid-template-columns: 0.1fr 1fr;
   padding: 23px;
   max-width: 800px;
@@ -38,6 +38,21 @@
   padding: 9px 7px 0 9px;
   border-radius: 50%;
 }
+
+.event-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+.about-event-img {
+  max-width: 300px;
+  margin: 4px 15px 0 10px;
+  justify-self: center;
+  border-radius: 1%;
+}
+
 .contact-wrapper {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
