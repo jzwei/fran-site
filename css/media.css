@@ -95,6 +95,12 @@
 
   /*DETAIL PAGE END******/
 
+  /*ILLUSTRATIONS START****************/
+  .illustration-figs {
+    height: 310px;
+    width: 310px;
+  }
+
   /*ABOUT START**********************/
   .about-img {
     max-width: 255px;
