@@ -116,6 +116,16 @@ a.pagelink:hover {
   grid-column-start: 1;
   grid-column-end: 4;
 }
+.illustrations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+}
+.illustrationstitle {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
 /*INDEX PAGE END*/
 
 /* HIDDEN BUY BUTTON START */
