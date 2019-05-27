@@ -61,6 +61,26 @@ figure {
   filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
 }
 
+.illustration-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.illustration-figs {
+  width: 600px;
+  height: 600px;
+}
+.illustration-text {
+  /* display: flex; */
+  /* display: inline-block; */
+  background-color: white;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 1%;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+  padding: 23px;
+}
 figure img {
   width: 100%;
   border-top: solid 3px #fbf5fa;
@@ -119,4 +139,7 @@ figure span.soldout_ribbon span {
   display: block;
 }
 
+.buy-button {
+  /* text-align: center; */
+}
 /*PRODUCT PAGE END*/
