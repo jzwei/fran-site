@@ -12,7 +12,7 @@
   background-color: rgb(255, 211, 211);
   display: flex;
   /*margin-top: 42px;*/
-  border-bottom: solid 5px white;
+  /* border-bottom: solid 5px white; */
 }
 
 .pagetop {
@@ -39,6 +39,16 @@
   background-repeat: no-repeat;
   background-color: rgb(255, 211, 211);
 }*/
+.sectionname {
+  background-color: rgb(255, 211, 211);
+  /* color: white; */
+  color: black;
+  padding: 5px 20px;
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
 
 .gallery {
   display: flex;

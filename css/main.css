@@ -75,8 +75,13 @@ a:active {
   top: 176px;*/
   transform: rotate(-20deg);
 }
-
-a.pagelink {
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+}
+a.sectiontitle {
   background-color: rgb(255, 211, 211);
   /* color: white; */
   color: black;
@@ -84,8 +89,11 @@ a.pagelink {
   font-size: 2.5em;
   text-align: center;
   text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
-a.pagelink:hover {
+
+a.sectiontitle:hover {
   font-style: italic;
 }
 
@@ -106,22 +114,6 @@ a.pagelink:hover {
   font-size: 3em;
 }
 
-.pins {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
-  grid-gap: 10px;
-}
-.pinstitle {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.illustrations {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
-  grid-gap: 10px;
-}
 .illustrationstitle {
   grid-column-start: 1;
   grid-column-end: 4;
