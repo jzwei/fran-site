@@ -14,7 +14,6 @@
     "http-server": "^0.11.1"
   },
   "dependencies": {
-    "ecstatic": "^3.3.2",
-    "lodash": "^4.17.14"
+    "ecstatic": "^3.3.2"
   }
 }
