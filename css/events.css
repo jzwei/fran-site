@@ -40,3 +40,7 @@
 .event-details {
   margin-left: 20px;
 }
+
+.strikethrough {
+  text-decoration: line-through solid darkgrey;
+}
