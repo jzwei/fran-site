@@ -36,6 +36,13 @@
   a.pagelink {
     font-size: 2em;
   }
+  a.sectiontitle {
+    font-size: 1.9em;
+  }
+  #indexcontent a.item {
+    height: 20vh;
+    /* max-width: 15vh; */
+  }
   /*INDEX END************/
 
   /*PAGE START***********************/
@@ -46,19 +53,38 @@
   .pagetop {
     display: inline-flex;
     width: 100%;
-    min-height: 20vh;
+    height: 100px;
     /*grid-column-start: 1;
     grid-column-end: span 2;*/
   }
   .pagename {
-    font-size: 3em;
+    font-size: 2em;
+    padding: 0px;
   }
-
-  figure {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* figure {
     min-height: 100px;
     height: auto;
     margin: 10px;
     padding: 30px;
+  } */
+  figure {
+    height: auto;
+    width: auto;
+    margin: 10px;
+    padding: 14px;
+  }
+  figure img {
+    height: auto;
+  }
+  figure .name {
+    font-size: 0.8em;
+  }
+  figure .price {
+    font-size: 0.7em;
   }
   /*PAGE END***********/
 
