@@ -201,9 +201,20 @@
     font-size: 0.5em;
     top: 2px;
     left: 4px;
+    object-fit: contain;
   }
   figure .price {
     font-size: 0.5em;
+  }
+  figure span.soldout_ribbon {
+    border-top: 50px solid #39a2de;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  figure span.soldout_ribbon span {
+    font-size: 8px;
+    top: -44px;
+    left: 2px;
   }
 }
 
