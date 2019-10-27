@@ -198,6 +198,8 @@
   }
   figure .name {
     font-size: 0.5em;
+    top: 2px;
+    left: 4px;
   }
   figure .price {
     font-size: 0.7em;
