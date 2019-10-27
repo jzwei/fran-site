@@ -186,6 +186,24 @@
   /*FOOTER END*********/
 }
 
+@media only screen and (max-width: 450px) {
+  figure {
+    height: auto;
+    width: auto;
+    margin: 3px;
+    padding: 10px;
+  }
+  figure img {
+    height: auto;
+  }
+  figure .name {
+    font-size: 0.5em;
+  }
+  figure .price {
+    font-size: 0.7em;
+  }
+}
+
 /* @media only screen and (max-width: 200px) {
   figure {
     min-height: 100px;
