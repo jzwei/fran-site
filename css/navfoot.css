@@ -114,7 +114,7 @@ footer .logoimage img {
     position: fixed;
     margin-top: 56px;
     right: 0;
-    width: 32%;
+    width: 40%;
     transform: translateX(2000px);
     transition: transform 250ms ease-in-out;
     background: rgba(255, 255, 255, 0.9);
