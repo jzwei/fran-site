@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "ecstatic": "^3.3.2",
-    "js-yaml": "^3.13.1"
+    "js-yaml": "^3.13.1",
+    "lodash.update": "^4.10.2"
   }
 }
