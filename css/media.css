@@ -194,6 +194,7 @@
   /*FOOTER END*********/
 }
 
+/* PRODUCT PAGES */
 @media only screen and (max-width: 450px) {
   figure {
     height: auto;
@@ -218,26 +219,3 @@
     left: 2px;
   }
 }
-
-/* @media only screen and (max-width: 200px) {
-  figure {
-    min-height: 100px;
-    height: auto;
-    margin: 5px;
-    padding: 17px;
-  }
-
-  figure .name {
-    font-size: 0.9em;
-  }
-
-  figure .price {
-    font-size: 0.9em;
-  }
-  #page .itemprice {
-    font-size: 3.5vw;
-  }
-  figure a:hover {
-    font-size: 1em;
-  }
-} */
