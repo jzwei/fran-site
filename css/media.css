@@ -1,8 +1,19 @@
-@media only screen and (max-width: 938px) {
+@media only screen and (max-width: 1222px) {
   #page {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 }
+@media only screen and (max-width: 640px) {
+  #page {
+    padding-top: 58px;
+  }
+}
+@media only screen and (max-width: 601px) {
+  #page {
+    padding-top: 62px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .detailnamesmall {
     display: none;
@@ -36,7 +47,7 @@
   .indexname {
     padding: 40px;
     font-size: 3em;
-    margin-top: 56px;
+    /* margin-top: 63px; */
   }
   a.pagelink {
     font-size: 2em;
@@ -52,7 +63,6 @@
 
   /*PAGE START***********************/
   #page {
-    padding-top: 56px;
     margin-top: 0px;
   }
   .pagetop {
