@@ -1,20 +1,16 @@
-@media only screen and (max-width: 1222px) {
+@media only screen and (max-width: 1091px) {
   #page {
-    padding-top: 30px;
+    padding-top: 28px;
   }
 }
-@media only screen and (max-width: 640px) {
-  #page {
-    padding-top: 58px;
-  }
-}
-@media only screen and (max-width: 601px) {
+
+@media only screen and (max-width: 600px) {
   #page {
     padding-top: 62px;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
   .detailnamesmall {
     display: none;
   }
