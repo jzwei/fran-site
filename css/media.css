@@ -1,10 +1,10 @@
-@media only screen and (max-width: 1091px) {
+@media only screen and (max-width: 1252px) {
   #page {
     padding-top: 28px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   #page {
     padding-top: 62px;
   }
